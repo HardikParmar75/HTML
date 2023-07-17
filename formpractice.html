@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form>
+            <table>
+            <tr>
+                <th colspan="2">registration form</th>
+            </tr>
+            <tr>
+                <td align="right">name:</td>
+                <td><input type="text" required pattern="[a-zA-Z]+" title="enter valid data!"></td>
+            </tr>
+            <tr>
+                <td align="right">email:</td>
+                <td><input type="email" required pattern="[a-zA-Z]"></td>
+            </tr>
+            <tr>
+                <td align="right">password:</td>
+                <td><input type="password" required pattern="[0-9]{6,8}"></td>
+            </tr>
+            <tr>
+                <td align="right">mobile:</td>
+                <td><input type="text" readonly pattern="[0-9]{10}"></td>
+            </tr>
+            <tr>
+                <td align="right">quantity:</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td align="right">date:</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td align="right">dob:</td>
+                <td><input type="datetime-local"></td>
+            </tr>
+            <tr>
+                <td align="right">color:</td>
+                <td><input type="color"></td>
+            </tr>
+            <tr>
+                <td align="right">range:</td>
+                <td><input type="range"></td>
+            </tr>
+            <tr>
+                <td align="right">address:</td>
+                <td><textarea rows="5" cols="20" placeholder="enter your address..."></textarea></td>
+            </tr>
+            <tr>
+                <td align="right">gender:</td>
+                <td><input type="radio" name="x">male:<input type="radio" name="x">female:</td>
+                </tr>
+                <tr>
+                    <td>languages:</td>
+                    <td><input type="checkbox">gujarati<input type="checkbox">hindi<input type="checkbox">marathi<input type="checkbox"> thullu 
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center"><select>
+                        <option hidden>---select your country---</option>
+                        <option >india</option>
+                        <option selected>USA</option>
+                        <option disabled>UAE</option>
+                    </select></td>
+                </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="submission"><input type="reset" value="refill"></td>
+            </tr>
+            
+        </table>
+        </form>
+</body>
+</html>
