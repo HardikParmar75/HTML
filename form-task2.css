@@ -1,0 +1,13 @@
+body
+{
+    background-image: url(i.jpg);
+    display: flex;
+}
+h1{
+    color: white;
+}
+table
+{
+    border: 1px;
+    color: white;
+}

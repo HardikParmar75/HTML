@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            height: 200px;
+            width: 200px;
+            background-color: skyblue;
+        }
+        .a
+        {
+            background-image: url(image1.jpg);
+            background-size: 100% 100%;
+        }
+        .b
+        {
+            background-image: url(image1.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #c
+        {
+            background-image: url(image1.jpg);
+            background-size: cover;
+        }
+        .d
+        {
+            object-fit: scale-down ;
+
+        }
+        .e
+        {
+            background: linear-gradient(to bottom,red 60%,blue,green);
+        }
+        .f
+        {
+            background: linear-gradient(to top,red 60%,blue,green);
+        }
+        .g
+        {
+            background: linear-gradient(to right,red 60%,blue,green);
+        }
+        .h
+        {
+            background: linear-gradient(to left,red 60%,blue,green);
+        }
+        .i
+        {
+            background: linear-gradient(24deg,red 60%,blue,green);
+        }
+
+    </style>
+</head>
+<body>
+    <div>HELLO</div>
+    <br>
+    <br>
+    <div class="a">hello</div>
+    <br>
+    <br>
+    <div class="b">hello</div>
+    <br>
+    <br>
+    <div id="c">hello</div>
+    <br>
+    <br>
+    <div class="d">
+        hello
+        <img src="image1.jpg" height="200px" width="200px">
+    </div>
+    <br>
+    <br>
+    <div class="e">hello</div>
+    <br>
+    <br>
+    <div class="f">hello</div>
+    <br>
+    <br>
+    <div class="g">hello</div>
+    <br>
+    <br>
+    <div class="h">hello</div>
+    <br>
+    <br>
+    <div class="i">hello</div>
+</body>
+</html>
