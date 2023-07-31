@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image practice</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: gray;
+        }
+        .foreground
+        {
+            border: 2px solid black;
+            object-fit: cover;
+        }
+        .backGround
+        {
+            background: url(image1.jpg);
+            height: 100px;
+            width: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="foreground">
+        hello
+        <img src="image1.jpg" height="100px" width="100px"> 
+    </div>
+    <br>
+    <br>
+    <div class="backGround">
+        hello
+    </div>
+</body>
+</html>
