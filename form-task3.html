@@ -8,20 +8,33 @@
         .a
         { 
             height: 700px;
-            width: 1000px;
-            background: #d8527f;
+            width: 1600px;
+            background: linear-gradient(skyblue,pink);
             padding-top: 160px;
             padding-left: 180px;
         }
         .b
         {
-            height: 500px;
-            width: 800px;
+            height: 600px;
+            width: 1400px;
             background-color: white;
-            /* margin: auto; */
-            /* margin-top: 300px; */
-            /* margin-left: 100px; */
-            color:#c64771 ;
+            color:pink ;
+        }
+        input
+        {
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 3px solid black;
+            size: 100px;
+        }
+        button
+        {
+            padding: 10px 50px;
+            background: linear-gradient(skyblue,pink);
+        }
+        th{
+            font-size: 25px;
         }
     </style>
 </head>
@@ -34,27 +47,30 @@
                         <th colspan="3"><h1>Responsive Contact Us form</h1></th>
                     </tr>
                     <td>
-                        <input type="text" placeholder="First Name" style="border-top:0; border-left: 0;border-right: 0;border-bottom: 3px solid black;">  
+                        <input type="text" placeholder="First Name" size="60px">  
+                        </td>
+                        <td>   
                         </td>
                         <td>
-                        <input type="text" placeholder="Last Name" style="border-top:0; border-left: 0;border-right: 0;border-bottom: 3px solid black;">
+                        <input type="text" placeholder="Last Name" size="60px">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="email" placeholder="Email address" style="border-top:0; border-left: 0;border-right: 0;border-bottom: 3px solid black;">
+                            <input type="email" placeholder="Email address" size="60px">
                         </td>
+                        <td></td>
                         <td>
-                            <input type="text" placeholder="Website Name" style="border-top:0; border-left: 0;border-right: 0;border-bottom: 3px solid black;">
+                            <input type="text" placeholder="Website Name" size="60px">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" placeholder="Write Your Message" style="border-top:0; border-left: 0;border-right: 0;border-bottom: 3px solid black;">
+                            <input type="text" placeholder="Write Your Message" size="100px">
                         </td>
                     </tr>
                     <tr>
-                        <td><input type="submit" value="SUBMIT" style="background: linear-gradient(skyblue,hotpink 70%,white);" ></td>
+                        <td><button>SUBMIT</button></td>
                     </tr>
                 </table>
             </form>
