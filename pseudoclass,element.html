@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:first-child
+        {
+            background-color: blue;
+            color: black;
+            font-size: 55px;
+        }
+        div:nth-child(5)
+        {
+            background-color: chocolate;
+            color: black;
+            font-size: 45px;
+        }
+        div:nth-child(3)
+        {
+            background-color: brown;
+            color: white;
+            font-size: 40px;
+        }
+        .a::first-letter
+        {
+            color: white;
+        }
+        .a:hover
+        {
+            color: red;
+        }
+        .a::after
+        {
+            content: " parmar";
+        }
+        .c::before{
+            content: "the ";
+        }
+        .e::before{
+            content: "hardik";
+        }
+        .e:hover::before{
+            content: "return courser!";
+        }
+    </style>
+</head>
+<body>
+    <div class="a">hardik</div>
+    <div class="b">hardik</div>
+    <div class="c">hardik</div>
+    <div class="d">hardik</div>
+    <div class="e"></div>
+</body>
+</html>

@@ -5,41 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *
+        {
+            box-sizing: border-box;
+        }
         .a
         {
-            height: 600px;
-            width: 1250px;
-            background: black;
-        }
-        .img{
             background: url(bottom2.jpg);
-            height: 300px;
+            height: 500px;
+            width: 700px;
+            border: 15px solid black;
+            margin: 100px auto;
+            background-size: cover;
+            background-position: -50px 0px;
+            transition: .8s;
+        }
+        .a:hover
+        {
+            background-position: 0px 0;
+        }
+        .b
+        {
+            background: white;
+            height: 400px;
             width: 600px;
-            transform: translate(300px,150px);
-        }
-        .border:hover
-        {
-            height: 250px;
-            width: 450px;
-            border: 13px solid white;
+            border: 10px solid white;
+            background: transparent;
+            transform: translate(50px,50px);
+            opacity: 0;
+            transition: .8s;
+            margin: 0px 0px 0px -50px;
+            padding: 250px 0px 0px 400px;
+            font-size: 35px;
             color: white;
-            font-size: 50px;
-            transform: translate(70px,10px);
-            
+            letter-spacing: 8px;
         }
-        span
+        .a:hover .b
         {
-            font-size: 50px;
-            transform: translate(100px,300px);
+            opacity: 1;
+            margin: 0px 0px 0px 0px;
         }
-       /* img:hover::after
-        {
-            content: "new arrivals";
-            color: white;
-        }*/
     </style>
 </head>
 <body>
-    <div class="a"><div class="img"><div class="border"><span>ahead</span></div></div></div>
+    <div class="a">
+        <div class="b">New arrivals</div>
+    </div>
 </body>
 </html>
