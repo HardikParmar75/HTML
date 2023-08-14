@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            height: 30px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .effect
+        {
+            height: 5px;
+            width: 0px;
+            background-color: blue;
+            position: absolute;
+            left: 250px;
+            transition: 1s;
+            overflow: hidden;
+        }
+        .main:hover .effect
+        {
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        menu
+        <div class="effect"></div>
+    </div>
+</body>
+</html>

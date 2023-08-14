@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav
+        {
+            width: 100%;
+            background-color: coral;
+            position: relative;
+        }
+        ul
+        {
+            padding: 0;
+            margin: 0;
+            word-spacing: 20px;
+        }
+        .menu
+        {
+            display: inline;
+        }
+        .submenu
+        {
+            /* display: none; */
+            position: absolute;
+            top: 100%;
+            left: 20%;
+            background-color: cornflowerblue;
+            list-style: none;
+            opacity: 0;
+            transition: 1s;
+        }
+        li:hover .submenu
+        {
+            /* display: block; */
+            background-color: cornflowerblue;
+            opacity: 1;
+        }
+        .submenu2
+        {
+            /* display: none; */
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            list-style: none;
+            transition: 1s;
+        }
+        .s:hover .submenu2
+        {
+            /* display: block; */
+            opacity: 1;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="menu">
+                <a href="">home</a>
+            </li>
+            <li class="menu">
+                <a href="">about</a>
+            </li>
+            <li class="menu">
+                <a href="">service</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="">service 1</a>
+                    </li>
+                    <li>
+                        <a href="">service 2</a>
+                    </li>
+                    <li class="s">
+                        <a href="">service 3</a>
+                        <ul class="submenu2">
+                            <li>
+                                <a href="">service 4</a>
+                            </li>
+                            <li>
+                                <a href="">service 3</a>
+                            </li>
+                            <li>
+                                <a href="">service 2</a>
+                            </li>
+                            <li>
+                                <a href="">service 1</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">service 4</a>
+                    </li> 
+                </ul>
+            </li>
+            <li class="menu">
+                <a href="">contact</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
