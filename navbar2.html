@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        .main
+        {
+            background: coral;
+            padding: 20px;
+            text-align: center;
+        }
+        ul
+        {
+            margin: 0;
+        }
+        li
+        {
+            display: inline;
+            word-spacing: 30px;
+            margin-right: 10px;
+            /* border-radius: 30px; */
+            font-size: 20px;
+            position: relative;
+            background-color: blueviolet;
+            border-radius: 10px;
+            transition: .31s;
+        }
+        a
+        {
+            color: black;
+            text-decoration: none;
+        }
+        li::after
+        {
+            content: "";
+            height: 9px;
+            width: 0px;
+            background-color: black;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: .31s;
+        }
+        li:hover::after
+        {
+            width: 100%;
+        }
+        li:hover
+        {   background: linear-gradient(red ,blue);
+            font-size: 50px;
+        }
+        </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li>
+                <a href="">menu</a>
+            </li>
+            <li>
+                <a href="">address</a>
+            </li>
+            <li>
+                <a href="">services</a>
+            </li>
+            <li>
+                <a href="">submenu</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

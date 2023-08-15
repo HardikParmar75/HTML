@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fliptask</title>
+    <style>
+        body
+        {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 190px;
+        }
+        .main
+        {
+            height: 450px;
+            width: 250px;
+            background-color: white;
+            position: relative;
+            margin:0 50px 50px 50px;
+            box-shadow: 0px 0px 15px black;
+        }
+        .new
+        {
+            width: 40px;
+            border: 1px solid black;
+            text-align: right;
+            background: hotpink;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+        .front
+        {
+            height: 290px;
+            border: 1px solid white;
+            transition: 1s;
+            transform: rotateY(180deg);
+        }
+        .main:hover .front
+        {
+            transform: rotateY(0deg);
+        }
+        .view
+        {
+            height: 45px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            font-size: 20px;
+            text-align: center;
+            position: absolute;
+            line-height: 45px;
+            top: 0;
+            opacity: 0;
+            transition: 1s;
+        }
+        .main:hover .view
+        {
+            top: 240px;
+            opacity: 1;
+        }
+        .text1
+        {
+            color: hotpink;
+            font-size: 100%;
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            padding: 5px;
+        }
+        .text2
+        {
+            font-weight: bold;
+            font-size: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            transform: translate(50px,10px);
+        }
+        .text3
+        {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-decoration: line-through;
+            transform: translate(130px,-16px);
+            color: gray;
+        }
+        .button
+        {
+            height: 40px;
+            width: 150px;
+            transform: translate(50px,10px);
+            background-color: cadetblue;
+            font-size: 15px;
+            outline: 2px  solid cadetblue;
+            outline-offset: 0;
+            transition: .31s;
+            border: none;
+        }
+        .button:hover
+        {
+            outline: 5px solid cadetblue;
+            outline-offset: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="firstrow0">
+    <!-- start card -->
+    <div class="main">
+        <div class="new">NEW</div>
+        	<div class="front">
+                <img src="m1.jpg" alt="" height="100%" width="100%">
+            </div>
+            <div class="view">Quick View</div>
+            <div class="text1">Gabi full Sleeve sweetshirt</div>
+            <div class="text2">$150.00</div>
+            <div class="text3">$99.oo</div>
+            <button class="button">ADD TO CART</button>
+            <!-- END card -->
+    </div>
+    </div>
+    <div class="firstrow1">
+        <!-- start card -->
+        <div class="main">
+            <div class="new">NEW</div>
+                <div class="front">
+                    <img src="m2.jpg" alt="" height="100%" width="100%">
+                </div>
+                <div class="view">Quick View</div>
+                <div class="text1">Formal blue shirt</div>
+                <div class="text2">$45.99</div>
+                <div class="text3">$69.71</div>
+                <button class="button">ADD TO CART</button>
+                <!-- END card -->
+        </div>
+        </div>
+
+        <div class="firstrow2">
+            <!-- start card -->
+            <div class="main">
+                <div class="new">NEW</div>
+                    <div class="front">
+                        <img src="m3.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="view">Quick View</div>
+                    <div class="text1">Dark blue track pants</div>
+                    <div class="text2">$88.99</div>
+                    <div class="text3">$89.71</div>
+                    <button class="button">ADD TO CART</button>
+                    <!-- END card -->
+            </div>
+            </div>
+
+            <div class="firstrow3">
+                <!-- start card -->
+                <div class="main">
+                    <div class="new">NEW</div>
+                        <div class="front">
+                            <img src="m4.jpg" alt="" height="100%" width="100%">
+                        </div>
+                        <div class="view">Quick View</div>
+                        <div class="text1">Round Neck black t-shirt</div>
+                        <div class="text2">$190.99</div>
+                        <div class="text3">$159.71</div>
+                        <button class="button">ADD TO CART</button>
+                        <!-- END card -->
+                </div>
+                </div>
+
+                <div class="firstrow4">
+                    <!-- start card -->
+                    <div class="main">
+                        <div class="new">NEW</div>
+                            <div class="front">
+                                <img src="m5.jpg" alt="" height="100%" width="100%">
+                            </div>
+                            <div class="view">Quick View</div>
+                            <div class="text1">men's black jeans</div>
+                            <div class="text2">$66.99</div>
+                            <div class="text3">$90.71</div>
+                            <button class="button">ADD TO CART</button>
+                            <!-- END card -->
+                    </div>
+                    </div>
+
+                    <div class="firstrow5">
+                        <!-- start card -->
+                        <div class="main">
+                            <div class="new">NEW</div>
+                                <div class="front">
+                                    <img src="m6.jpg" alt="" height="100%" width="100%">
+                                </div>
+                                <div class="view">Quick View</div>
+                                <div class="text1">analog watch</div>
+                                <div class="text2">$160.99</div>
+                                <div class="text3">$290.71</div>
+                                <button class="button">ADD TO CART</button>
+                                <!-- END card -->
+                        </div>
+                        </div>
+
+                        <div class="firstrow6">
+                            <!-- start card -->
+                            <div class="main">
+                                <div class="new">NEW</div>
+                                    <div class="front">
+                                        <img src="m7.jpg" alt="" height="100%" width="100%">
+                                    </div>
+                                    <div class="view">Quick View</div>
+                                    <div class="text1">reversible Belt</div>
+                                    <div class="text2">$30.99</div>
+                                    <div class="text3">$50.71</div>
+                                    <button class="button">ADD TO CART</button>
+                                    <!-- END card -->
+                            </div>
+                            </div>
+
+                            
+                            <div class="firstrow7">
+                                <!-- start card -->
+                                <div class="main">
+                                    <div class="new">NEW</div>
+                                        <div class="front">
+                                            <img src="m8.jpg" alt="" height="100%" width="100%">
+                                        </div>
+                                        <div class="view">Quick View</div>
+                                        <div class="text1">party men's blazer</div>
+                                        <div class="text2">$260.99</div>
+                                        <div class="text3">$390.71</div>
+                                        <button class="button">ADD TO CART</button>
+                                        <!-- END card -->
+                                </div>
+                                </div>
+        
+</body>
+</html>

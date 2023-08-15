@@ -8,12 +8,13 @@
         body
         {
             background-color: black;
+            box-sizing: border-box;
         }
         .main
         {
             height: 500px;
             width: 300px;
-            background: gray;
+            background:linear-gradient(red,blue,red);
             margin: 100px auto;
             position: relative;
             display: flex;
@@ -24,12 +25,9 @@
         .sub1
         {
             height: 650px;
-            width: 350px;
+            width: 550px;
             background:linear-gradient(red,blue,red);
-            /*position: absolute;
-            top: 05;
-            left: 10%;*/
-
+            transition: .34s;
         }
         .sub2
         {
@@ -43,7 +41,7 @@
         }
         .main:hover .sub1
         {
-            transform: rotate(120deg);
+            transform: rotate(360deg);
         }
     </style>
 </head>
