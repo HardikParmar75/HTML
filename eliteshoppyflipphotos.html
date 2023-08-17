@@ -37,10 +37,26 @@
             border: 1px solid white;
             transition: 1s;
             transform: rotateY(180deg);
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
         .main:hover .front
         {
             transform: rotateY(0deg);
+        }
+        .back
+        {
+            height: 290px;
+            border: 1px solid white;
+            transition: 1s;
+            transform: rotateY(0deg);
+            backface-visibility: hidden;
+        }
+        .main:hover .back
+        {
+            transform: rotateY(180deg);
         }
         .view
         {
@@ -114,6 +130,9 @@
         	<div class="front">
                 <img src="m1.jpg" alt="" height="100%" width="100%">
             </div>
+            <div class="back">
+                <img src="m1.jpg" alt="" height="100%" width="100%">
+            </div>
             <div class="view">Quick View</div>
             <div class="text1">Gabi full Sleeve sweetshirt</div>
             <div class="text2">$150.00</div>
@@ -127,6 +146,9 @@
         <div class="main">
             <div class="new">NEW</div>
                 <div class="front">
+                    <img src="m2.jpg" alt="" height="100%" width="100%">
+                </div>
+                <div class="back">
                     <img src="m2.jpg" alt="" height="100%" width="100%">
                 </div>
                 <div class="view">Quick View</div>
@@ -145,6 +167,9 @@
                     <div class="front">
                         <img src="m3.jpg" alt="" height="100%" width="100%">
                     </div>
+                    <div class="back">
+                        <img src="m3.jpg" alt="" height="100%" width="100%">
+                    </div>
                     <div class="view">Quick View</div>
                     <div class="text1">Dark blue track pants</div>
                     <div class="text2">$88.99</div>
@@ -159,6 +184,9 @@
                 <div class="main">
                     <div class="new">NEW</div>
                         <div class="front">
+                            <img src="m4.jpg" alt="" height="100%" width="100%">
+                        </div>
+                        <div class="back">
                             <img src="m4.jpg" alt="" height="100%" width="100%">
                         </div>
                         <div class="view">Quick View</div>
@@ -177,6 +205,9 @@
                             <div class="front">
                                 <img src="m5.jpg" alt="" height="100%" width="100%">
                             </div>
+                            <div class="back">
+                                <img src="m5.jpg" alt="" height="100%" width="100%">
+                            </div>
                             <div class="view">Quick View</div>
                             <div class="text1">men's black jeans</div>
                             <div class="text2">$66.99</div>
@@ -191,6 +222,9 @@
                         <div class="main">
                             <div class="new">NEW</div>
                                 <div class="front">
+                                    <img src="m6.jpg" alt="" height="100%" width="100%">
+                                </div>
+                                <div class="back">
                                     <img src="m6.jpg" alt="" height="100%" width="100%">
                                 </div>
                                 <div class="view">Quick View</div>
@@ -209,6 +243,9 @@
                                     <div class="front">
                                         <img src="m7.jpg" alt="" height="100%" width="100%">
                                     </div>
+                                    <div class="back">
+                                        <img src="m7.jpg" alt="" height="100%" width="100%">
+                                    </div>
                                     <div class="view">Quick View</div>
                                     <div class="text1">reversible Belt</div>
                                     <div class="text2">$30.99</div>
@@ -225,6 +262,9 @@
                                     <div class="new">NEW</div>
                                         <div class="front">
                                             <img src="m8.jpg" alt="" height="100%" width="100%">
+                                        </div>
+                                        <div class="back">
+                                            <img src="m.jpg" alt="" height="100%" width="100%">
                                         </div>
                                         <div class="view">Quick View</div>
                                         <div class="text1">party men's blazer</div>

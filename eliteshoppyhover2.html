@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img1
+        {
+            height: 400px;
+            width: 700px;
+            background: url(bottom2.jpg);
+            background-size: cover;
+            background-position: -50px 0px;
+            transition: .31s;
+            border: 20px solid rgba(0, 0, 0, .23);
+            background-clip: border-box;
+            position: relative;
+        }
+        .img1:hover
+        {
+            background-position: 0px 0px;
+        }
+        .txt1
+        {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            font-size: 30px;
+            word-spacing: 10px;
+            letter-spacing: 5px;
+            color: white;
+        }
+        .sp1
+        {
+            color: red;
+        }
+        .txt2
+        {
+            height: 300px;
+            width: 600px;
+            background: transparent;
+            color: white;
+            border: 10px solid white;
+            transform: translate(30px,30px);
+            opacity: 0;
+            transition: .31s;
+            letter-spacing: 5px;
+            font-size: 35px;
+        }
+        .img1:hover .txt2
+        {
+            transform: translate(40px,30px);
+            opacity: 1;
+        }
+        .sp2
+        {
+            position: absolute;
+            top: 43%;
+            left: 45%;
+            font-family: cursive;
+        }
+        .img2
+        {
+            height: 400px;
+            width: 700px;
+            background: url(bottom1.jpg);
+            background-size: cover;
+            background-position: -50px 0px;
+            transition: .31s;
+            border: 20px solid rgba(0, 0, 0, .23);
+            background-clip: border-box;
+            position: relative;
+        }
+        .img2:hover
+        {
+            background-position: 0px 0px;
+        }
+        .txt11
+        {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            font-size: 30px;
+            word-spacing: 10px;
+            letter-spacing: 5px;
+            color: white;
+        }
+        .sp11
+        {
+            color: red;
+        }
+        .txt22
+        {
+            height: 300px;
+            width: 600px;
+            background: transparent;
+            color: white;
+            border: 10px solid white;
+            transform: translate(30px,30px);
+            opacity: 0;
+            transition: .31s;
+            letter-spacing: 5px;
+            font-size: 35px;
+        }
+        .img2:hover .txt22
+        {
+            transform: translate(40px,30px);
+            opacity: 1;
+        }
+        .sp22
+        {
+            position: absolute;
+            top: 43%;
+            left: 45%;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="img2">
+                                <div class="txt11"><span class="sp11">F</span>ALL AHEAD</div>
+                                <div class="txt22"><span class="sp22">New Arrivals</span></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="img1">
+                                <div class="txt1"><span class="sp1">F</span>ALL AHEAD</div>
+                                <div class="txt2"><span class="sp2">New Arrivals</span></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
