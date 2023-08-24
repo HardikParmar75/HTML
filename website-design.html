@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website parts</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        .header
+        {
+            display: flex;
+        }
+        .logo
+        {
+            width: 30%;
+        }
+        .company
+        {
+            width: 70%;
+            background-color: green;
+            font-size: 35px;
+            color: white;
+            font-weight: bold;
+            font-family: cursive;
+            padding: 300px 0;
+            text-align: center;
+        }
+        .navbar
+        {
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+        }
+        li
+        {
+            list-style-type: none;
+            width: 25%;
+            text-align: center;
+        }
+        a
+        {
+            border: none;
+            text-decoration: none;
+            color: black;
+        }
+        .content
+        {
+            display: flex;
+        }
+        .c1,.c2,.c3,.c4
+        {
+            width: 25%;
+        }
+        .c1,.c3
+        {
+            background: url(chevrolet-camaro-ss-muscle-car.jpg);
+            background-size: 100% 100%;
+        }
+        .c2,.c4
+        {
+            object-fit: cover;
+        }
+        .footer
+        {
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo"><img src="earth-removebg-preview.png" alt="" height="100%" width="100%"></div>
+            <div class="company">company name</div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="">menu</a></li>
+                <li><a href="">address</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </div>
+        <div class="scroll">
+            <img src="chevrolet-camaro-ss-muscle-car.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="content">
+            <div class="c1">
+
+            </div>
+            <div class="c2">
+                <img src="bottom1.jpg" alt="" height="100%" width="100%">
+            </div>
+            <div class="c3">
+
+            </div>
+            <div class="c4">
+                <img src="bottom2.jpg" alt="" height="100%" width="100%">
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

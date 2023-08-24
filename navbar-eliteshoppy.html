@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* border:1px solid white; */
+        }
+        .linav
+        {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            word-spacing: 20px;
+            text-align: center;
+        }
+        .linav li
+        {
+            width: 15%;
+            list-style-type: none;
+            /* font-size: 0px; */
+            word-spacing: 10px;
+            display: inline;
+            padding-left: 50px;
+            padding-right: 50px;
+            border-right: 1px solid white;
+        }
+        a
+        {
+            color: white;
+            text-decoration: none;
+            /* border: 1px solid white; */
+        }
+        .searchnav
+        {
+            border: 1px solid black;
+            display: flex;
+            font-size: 55px;
+            padding: 30px;
+        }
+        .searchinput
+        {
+            width: 33.33%; 
+            /* position: relative; */
+            /* border: 1px solid black;  */
+            text-align: right;  
+            
+        }
+        input
+        {
+            height: 40px;
+            width: 60%;
+            border: 1px solid #2fdab8;
+            padding: 20px;
+        }
+        input:focus
+        {
+            outline: none;
+        }
+        button
+        {
+            height: 41px;
+            width: 60px;
+            font-size: 11px;
+            background-color: #2fdab8;
+            color: white;
+            text-align: center;
+            border: 1px solid #2fdab8;
+            cursor: pointer;
+        }
+        .brand
+        {
+            width: 33.33%;
+            /* border: 1px solid black; */
+            text-align: center;
+        }
+        span
+        {
+            background-color: black;
+            padding: 12px 24px;
+            color: white;
+        }
+        .socialmedia
+        {
+            width: 33.33%;
+            font-size: 25px;    
+            /* border: 1px solid black ; */
+            text-align: left;
+            display: flex;
+        }
+        .facebook
+        {
+            height: 40px;
+            width: 40px;
+            /* background: black; */
+            position: relative;
+            transform-style: preserve-3d;
+            transition: .31s;
+            margin-right: 10px;
+            margin-left: 10px;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            /* box-shadow: 5px 5px 5px black; */
+        }
+        .ff
+        {
+            height: inherit;
+            width: inherit;
+            background: #2fdab8;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+            transform: rotateX(0deg) translateZ(20px);
+        }
+        .fb
+        {
+            height: inherit;
+            width: inherit;
+            background: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+            transform: rotateX(90deg) translateZ(20px);
+            color: black;
+        }
+        .facebook:hover
+        {
+            transform: rotateX(-90deg);
+        }
+        /*.menunav
+        {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+        #cart
+        {
+            background-color: white;
+            color: black;
+            width: 10%;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+        }
+        .linav li
+        {
+            border-right: 1px solid white;
+        }
+        .menunav li
+        {
+            display: inline;
+            list-style-type: none;
+            word-spacing: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: relative;
+            letter-spacing: 2px;
+        }
+        .menunav li::after
+        {
+            content: "";
+            height: 5px;
+            width: 0%;
+            background-color: #2fdab8;
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            transition: .31s;
+        }
+        .menunav li:hover::after
+        {
+            width: 100%;
+        }*/
+        .menunav1 
+        {
+            background-color: black;
+            display: flex;
+            color: white;
+            justify-content: center;
+            font-size: 20px;
+        }
+        .menunav1 div
+        {
+            /* border: 1px solid white; */
+            width: 11.11%;
+            padding: 20px 0px;
+            position: relative;
+        }
+        .menunav1 div #cart
+        {
+            background-color: #20c997;
+            color: black;
+            text-align: center;
+            width: 50px;
+            height: 30px;
+            line-height: 35px;
+        }
+        .menunav1 .cartdiv
+        {
+            background-color: #2fdab8;
+            text-align: center;
+        }
+        .menunav1 a::after
+        {
+            content: "";
+            height: 5px;
+            width: 0%;
+            background-color: #20c997;
+            position: absolute;
+            top: 80%;
+            left: 0px;
+            transition: .31s;
+        }
+        .menunav1 a:hover::after
+        {
+            width: 60%;
+        }
+        .sectionmenswear
+        {
+            height: 300px;
+            width: 500px;
+            background-color: coral;
+            color: white;
+            display: flex;
+            display: none;
+        }
+        .picmens
+        {
+            width: 60%;
+            border: 1px solid white;
+            padding-top: 50px;
+            padding-left: 50px;
+        }
+        .pic1
+        {
+            height: 200px;
+            width: 200px;
+            background-color: gray;
+            position: relative;
+            overflow: hidden;
+        }
+        .hover1
+        {
+            height: 200px;
+            width: 200px;
+            background: rgba(0, 0, 0, 0.333);
+            position: absolute;
+            top: 200px;
+            left: -200px;
+            border-radius: 10px;
+            transition: .31s;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .pic1:hover .hover1
+        {
+            top: 100px;
+            left: -100px;
+            opacity: 1;
+        }
+        .hover2
+        {
+            height: 200px;
+            width: 200px;
+            background: rgba(0, 0, 0, 0.333);
+            position: absolute;
+            top: -200px;
+            left: 200px;
+            border-radius: 10px;
+            transition: .31s;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .pic1:hover .hover2
+        {
+            top: -100px;
+            left: 100px;
+            opacity: 1;
+        }
+        .detail1
+        {
+            width: 20%;
+            border: 1px solid white;
+            font-size: 20px;
+            padding-top: 40px;
+        }
+        .detail2
+        {
+            width: 20%;
+            border: 1px solid white;
+            font-size: 20px;
+            padding-top: 40px;
+        }
+        .detail1 ul,.detail2 ul
+        {
+            list-style-type: none;
+        }
+        .detail1 li,.detail2 li
+        {
+            padding-bottom: 10px;
+        }
+        .menswear:hover .sectionmenswear
+        {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainnav">
+        <div class="linav">
+            <ul>
+                <li><i class="fa-solid fa-lock"></i><a 
+                    href="#">&nbsp;signin</a></li>
+                <li><i class="fa-solid fa-edit"></i><a href="#">&nbsp;signup</a></li>
+                <li><i class="fa-solid fa-phone"></i><a href="#">&nbsp;call:01234567898</a></li>
+                <li><i class="fa-regular fa-envelope"></i><a href="#">&nbsp;info@example.com</a></li>
+            </ul>
+        </div>
+        <div class="searchnav">
+            <div class="searchinput">
+                <input type="text" placeholder="search here..."><button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="brand"><span>E</span>lite shoppy</div>
+            <div class="socialmedia">
+                share on:
+                <a href="">
+                <div class="facebook">
+                    <div class="ff"><i class="fa-brands fa-facebook"></i></div>
+                    <div class="fb"><i class="fa-brands fa-facebook"></i></div>
+                </div>
+                </a>
+                <a href="">
+                    <div class="facebook">
+                        <div class="ff"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="fb"><i class="fa-brands fa-twitter"></i></div>
+                    </div>
+                    </a>
+
+                    <a href="">
+                        <div class="facebook">
+                            <div class="ff"><i class="fa-brands fa-instagram"></i></div>
+                            <div class="fb"><i class="fa-brands fa-instagram"></i></div>
+                        </div>
+                        </a>
+
+                        <a href="">
+                            <div class="facebook">
+                                <div class="ff"><i class="fa-brands fa-linkedin"></i></div>
+                                <div class="fb"><i class="fa-brands fa-linkedin"></i></div>
+                            </div>
+                            </a>
+            </div>
+        </div>
+        <!--<div class="menunav">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li class="menswear"><a href="">men'swear</a>
+                    <div class="sectionmenswear">
+                        <div class="picmens">
+                            <div class="pic1"><img src="" alt=""><div class="hover1"></div>
+                            <div class="hover2"></div></div>
+                        </div>
+                        <div class="detail1">
+                            <ul>
+                                <li>clothing</li>
+                                <li>wallets</li>
+                                <li>footwear</li>
+                                <li>watches</li>
+                                <li>acceseries</li>
+                                <li>bags</li>
+                                <li>caps & hats</li>
+                            </ul>
+                        </div>
+                        <div class="detail2"> 
+                            <ul>
+                                <li>jewellery</li>
+                                <li>sunglasses</li>
+                                <li>perfumes</li>
+                                <li>beauty</li>
+                                <li>shirts</li>
+                                <li>sunglasses</li>
+                                <li>swimwear</li>
+                            </ul>
+                        </div>
+                    </div></li>
+                <li><a href="">women'swear</a></li>
+                <li><a href="">shortcodes</a></li>
+                <li><a href="">contact</a></li>     
+                <li><a href=""><i class="fa-solid fa-cart-shopping" id="cart"></i></a></li>
+            </ul>
+        </div>-->
+        <div class="menunav1">
+                <div><a href="">home</a></div>
+                <div><a href="">about</a></div>
+                <div class="menswear"><a href="">men's wear</a>
+                    <div class="sectionmenswear">
+                        <div class="picmens">
+                            <div class="pic1"><img src="" alt=""><div class="hover1"></div>
+                            <div class="hover2"></div></div>
+                        </div>
+                        <div class="detail1">
+                            <ul>
+                                <li>clothing</li>
+                                <li>wallets</li>
+                                <li>footwear</li>
+                                <li>watches</li>
+                                <li>acceseries</li>
+                                <li>bags</li>
+                                <li>caps & hats</li>
+                            </ul>
+                        </div>
+                        <div class="detail2"> 
+                            <ul>
+                                <li>jewellery</li>
+                                <li>sunglasses</li>
+                                <li>perfumes</li>
+                                <li>beauty</li>
+                                <li>shirts</li>
+                                <li>sunglasses</li>
+                                <li>swimwear</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div><a href="">women's wear</a></div>
+                <div><a href="">shortcodes</a></div>
+                <div><a href="">contact</a></div>
+                <div class="cartdiv"><a href=""><i class="fa-solid fa-cart-shopping" id="cart"></i></a></div>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
