@@ -1,6 +1,6 @@
         body *
         {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             box-sizing: border-box;
         }
         body
@@ -57,15 +57,15 @@
         {
             font-size: 11px;
         }
-        .txt1
+        .text1
         {
             text-align: right;
         }
-        .txt2
+        .text2
         {
             font-size: 50px;
         }
-        .txt3
+        .text3
         {
             text-align: left;
             font-size: 25px;
@@ -327,7 +327,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 35px;
+            font-size: 45px;
         }
         /* letter end */
 
@@ -338,14 +338,134 @@
             display: flex;
             gap: 10px;
             height: 700px;
+            color: white;
         }
         .i1,.i2
         {
             width: 50%;
         }
+        .i1
+        {
+            background: url(bb1.jpg);
+            background-size: cover;
+            font-size: 45px;
+            padding: 70px 0 0 400px;
+            letter-spacing: 5px;
+            background-position: -50px 0px;
+            position: relative;
+            border: 10px solid rgba(0, 0, 0, .23);
+            background-clip: border-box;
+            transition: .31s;
+        }
+        .s2
+        {
+            color: red;
+        }
+        .i1::after
+        {
+            content: "";
+            background: transparent;
+            height: 550px;
+            width: 550px;
+            border: 10px solid white;
+            opacity: 0;
+            transition: .31s;
+            font-size: 35px;
+            color: white;
+            letter-spacing: 8px;
+            position: absolute;
+            top: 10px;
+            left: 0px;
+        }
+        .i1:hover::after
+        {
+            opacity: 1;
+            top: 10px;
+            left: 40px;
+        }
+        .i1:hover
+        {
+            background-position: 0px 0px;
+        }
         .i3,.i5
         {
             height: 47.5%;
+            border: 10px solid rgba(0, 0, 0, .23);
+            background-clip: border-box;
+        }
+        .i3
+        {
+            background: url(bottom3.jpg);
+            background-size: cover;
+            padding: 50px 0 0 500px;
+            background-position: -50px 0px;
+            font-size: 30px;
+            letter-spacing: 5px;
+            transition: .31s;
+            position: relative;
+        }
+        .i3::after
+        {
+            content: "";
+            background: transparent;
+            height: 220px;
+            width: 550px;
+            border: 10px solid white;
+            opacity: 0;
+            transition: .31s;
+            font-size: 35px;
+            color: white;
+            letter-spacing: 8px;
+            position: absolute;
+            top: 10px;
+            left: 0px;
+        }
+        .i3:hover::after
+        {
+            opacity: 1;
+            top: 10px;
+            left: 40px;
+        }
+        .i3:hover
+        {
+            background-position: 0px 0px;
+        }
+        .i5
+        {
+            background: url(bottom4.jpg);
+            background-size: cover;
+            padding: 50px 0 0 500px;
+            background-position: -50px 0px;
+            font-size: 30px;
+            letter-spacing: 5px;
+            transition: .31s;
+            position: relative;
+        }
+        .i5::after
+        {
+            content: "";
+            background: transparent;
+            height: 220px;
+            width: 550px;
+            border: 10px solid white;
+            opacity: 0;
+            transition: .31s;
+            font-size: 35px;
+            color: white;
+            letter-spacing: 8px;
+            position: absolute;
+            top: 10px;
+            left: 0px;
+        }
+        .i5:hover::after
+        {
+            opacity: 1;
+            top: 10px;
+            left: 40px;
+        }
+        .i5:hover
+        {
+            background-position: 0px 0px;
         }
         .i4
         {
@@ -361,6 +481,292 @@
         .o1,.o2
         {
             width: 50%;
-            height: 300px;
+            height: 400px;
+        }
+        .o1
+        {
+            position: relative;
+            overflow: hidden;
+        }
+        .div1
+        {
+            height: 450px;
+            width: 750px;
+            background-color: rgba(0, 0, 0, 0.18);
+            position: absolute;
+            top: 450px;
+            left: -750px;
+            border-radius: 20px;
+            transition: .31s;
+        }
+        .o1:hover .div1
+        {
+            top: 0px;
+            left: 0px;
+        }
+        .div11
+        {
+            height: 450px;
+            width: 750px;
+            background-color: rgba(0, 0, 0, 0.18);
+            position: absolute;
+            top: -450px;
+            left: 550px;
+            border-radius: 20px;
+            transition: .31s;
+        }
+        .o1:hover .div11
+        {
+            top: 0px;
+            left: 0px;
+        }
+
+        .o2
+        {
+            position: relative;
+            overflow: hidden;
+        }
+        .div2
+        {
+            height: 450px;
+            width: 750px;
+            background-color: rgba(0, 0, 0, 0.18);
+            position: absolute;
+            top: 450px;
+            left: -750px;
+            border-radius: 20px;
+            transition: .31s;
+        }
+        .o2:hover .div2
+        {
+            top: 0px;
+            left: 0px;
+        }
+        .div22
+        {
+            height: 450px;
+            width: 750px;
+            background-color: rgba(0, 0, 0, 0.18);
+            position: absolute;
+            top: -450px;
+            left: 550px;
+            border-radius: 20px;
+            transition: .31s;
+        }
+        .o2:hover .div22
+        {
+            top: 0px;
+            left: 0px;
+        }
+        .txt1 
+        {
+            color: white;
+            position: absolute;
+            top: 40%;
+            left: 25%;
+            word-spacing: 5px;
+            letter-spacing: 5px;
+            font-size: 30px;
+            z-index: 1;
+            font-weight: bold;
+        }
+        .st1
+        {
+            color: blue ;
+        }
+         .txt2 
+        {
+            color: white;
+            position: absolute;
+            top: 40%;
+            left: 25%;
+            word-spacing: 5px;
+            letter-spacing: 5px;
+            font-size: 30px;
+            z-index: 1;
+            font-weight: bold;
+        }
+        .st2
+        {
+            color: blue ;
         }
         /* offer end */
+
+        /*section start*/
+        .sectionmain
+        {
+            padding-left: 2%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .mens,.womens,.bags,.footwear
+        {
+            display: inline;
+            margin-left: 200px;
+            padding: 10px 0 0 10px;
+            font-size: 30px;
+        }
+        /* section end */
+        /*shopping items start*/
+        .shopping
+        {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .main
+        {
+            height: 450px;
+            width: 250px;
+            background-color: white;
+            position: relative;
+            margin:0 50px 50px 50px;
+            box-shadow: 0px 0px 15px black;
+        }
+        .new
+        {
+            width: 40px;
+            border: 1px solid black;
+            text-align: right;
+            background: hotpink;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+        .front
+        {
+            height: 290px;
+            border: 1px solid white;
+            transition: 1s;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .main:hover .front
+        {
+            transform: rotateY(0deg);
+        }
+        .back
+        {
+            height: 290px;
+            border: 1px solid white;
+            transition: 1s;
+            transform: rotateY(0deg);
+            backface-visibility: hidden;
+        }
+        .main:hover .back
+        {
+            transform: rotateY(180deg);
+        }
+        .view
+        {
+            height: 45px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            font-size: 20px;
+            text-align: center;
+            position: absolute;
+            line-height: 45px;
+            top: 0;
+            opacity: 0;
+            transition: 1s;
+        }
+        .main:hover .view
+        {
+            top: 240px;
+            opacity: 1;
+        }
+        .gb1
+        {
+            color: hotpink;
+            font-size: 100%;
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            padding: 5px;
+        }
+        .gb2
+        {
+            font-weight: bold;
+            font-size: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            transform: translate(50px,10px);
+        }
+        .gb3
+        {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-decoration: line-through;
+            transform: translate(130px,-16px);
+            color: gray;
+        }
+        .button2
+        {
+            height: 40px;
+            width: 150px;
+            transform: translate(50px,10px);
+            background-color: cadetblue;
+            font-size: 15px;
+            outline: 2px  solid cadetblue;
+            outline-offset: 0;
+            transition: .31s;
+            border: none;
+        }
+        .button2:hover
+        {
+            outline: 5px solid cadetblue;
+            outline-offset: 5px;
+        }
+        /*shopping items end*/
+        /*discount start*/
+        .discountmain
+        {
+            height: 500px;
+            background: url(bot_2.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;    
+        }
+        .sp3
+        {
+            color: black;
+        }
+        .dis
+        {
+            font-size: 55px;
+            letter-spacing: 10px;
+            font-weight: bold;
+        }
+        /*discount end*/
+
+        /*shipping start*/
+        .shippingmain
+        {
+            height: 200px;
+            display: flex;
+        }
+        .icon
+        {
+            /* background-color: black; */
+            /* height: 100px; */
+            /* width: 100px; */
+        }
+        .it1
+        {   
+        }
+        .shipping,.support,.garuntee,.coupons
+        {
+            width: 25%;
+        }
+        /*shipping end*/
