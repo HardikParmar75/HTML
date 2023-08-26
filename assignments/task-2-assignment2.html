@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body *
+        {
+            /* border: 1px solid white; */
+        }
+        body
+        {
+            box-sizing: border-box;
+            /* border: 1px solid black; */
+        }
+        .main
+        {
+            height: 700px;
+            width: 100%;
+            background: url(image1.jpg);
+            z-index: 1;
+        }
+        .sub1
+        {
+            height: 700px;
+            width: 50%;
+            background-color: black;
+            position: relative;
+            text-align: right;
+            z-index: 2;
+        }
+        .sub2
+        {
+            height: 650px;
+            width: 90%;
+            /* border: 1px solid white; */
+            color: white;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 3;
+        }
+        .s1
+        {
+            font-size: 20px;
+            color: red;
+        }
+        .s2
+        {
+            font-size: 30px;
+            color: skyblue;
+        } 
+        .round1
+        {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 240px;
+            left: 700px;
+            z-index: 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .round2
+        {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 400px;
+            left: 700px;
+            z-index: 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .round3
+        {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 550px;
+            left: 700px;
+            z-index: 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .i1
+        {
+            color: black;
+            z-index: 6;
+        }
+       </style>
+</head>
+<body>
+    <div class="main">
+        <div class="round1"><i class="fa-solid fa-desktop" id="i1"></i></div>
+        <div class="round2"><i class="fa-solid fa-sheet-plastic"></i></div>
+        <div class="round3"><i class="fa-solid fa-camera"></i></div>
+        <div class="sub1">
+            <div class="sub2">
+                <br>
+                <br>
+                <br>
+                <br>
+                <p class="s2">OUR SERVICES</p>
+                <br>
+                <p class="s1">WEB DESIGN</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing </p>
+                <p>Lorem ipsum dolor</p>
+                <br>
+                <p class="s1">PRINT DESIGN</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing </p>
+                <p>Lorem ipsum dolor</p>
+                <br>
+                <p class="s1">PHOTOGRAPHY</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing </p>
+                <p>Lorem ipsum dolor</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

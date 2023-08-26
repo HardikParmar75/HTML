@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body *
+        {
+            /* border: 1px solid black; */
+        }
+        body
+        {
+            background: url(image1.jpg);
+            box-sizing: border-box;
+        }
+        .letter
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transform: translate(0px,80px);
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .a
+        {
+            opacity:1;
+            fill: rgba(255, 255, 255, 0.685);
+        }
+        svg
+        {
+            transform: translate(0px,150px);
+        }
+        .wave
+        {
+            position: relative;
+        }
+        .r1
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: url(image1.jpg);
+            position: absolute;
+            top: 450px;
+            left: 150px;
+            z-index: 1;
+        }
+        .r2
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: url(image1.jpg);
+            position: absolute;
+            top: 390px;
+            left: 400px;
+            z-index: 1;
+        }
+        .r3
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: url(image1.jpg);
+            position: absolute;
+            top: 370px;
+            left: 700px;
+            z-index: 1;
+        }
+        .r4
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: url(image1.jpg);
+            position: absolute;
+            top: 400px;
+            left: 1000px;
+            z-index: 1;
+        }
+        .r5
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: url(image1.jpg);
+            position: absolute;
+            top: 300px;
+            left: 1250px;
+            z-index: 1;
+        }
+        .letter2
+        {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .p3
+        {
+            position: absolute;
+            top: 0px;
+            left: 380px;
+        }
+        .p4
+        {
+            position: absolute;
+            top: 30px;
+            left: 380px;
+        }
+    </style>
+</head>
+<body>
+    <div class="letter">
+        <p class="p1">OUR TEAM</p>
+        <p class="p2">meet the craziest team.share your touughts with them.</p>
+    </div>
+    <div class="wave">
+    <div class="r1"></div>
+    <div class="r2"></div>
+    <div class="r3"></div>
+    <div class="r4"></div>
+    <div class="r5"></div>
+    <svg  version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1928 652" width="100%" height="500"><path class="a" d="m1922 3c-14.5 49.8-351.5 452.6-828 342-476.5-110.6-1094 169-1094 169v137.5h1920c0 0 16.5-698.3 2-648.5z"/></svg>
+    </div>
+    <div class="letter2">
+        <p class="p3">WEB DESIGNER</p>
+        <P class="p4">UI/UX DESIGNER</P>
+    </div>
+
+</body>
+</html>
