@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            height: 300px;
+            width: 500px;
+            border: 5px solid black;
+        }
+        .sub1
+        {
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            border-radius: 50%;
+            animation: transformer 5s alternate infinite;
+        }
+        @keyframes transformer
+        {
+            0%{transform: translate(10px,10px);}
+            10%{
+                transform: translate(50px,20px);
+            }
+            20%{
+                transform: translate(100px,30px);
+            }
+            30%
+            {
+                transform: translate(200px,20px);
+            }
+            40%
+            {
+                transform: translate(250px,40px);
+            }
+            50%
+            {
+                transform: translate(300px,50px);
+            }
+            60%
+            {
+                transform: translate(300px,40px);
+            }
+            70%
+            {
+                transform: translate(350px,30px);
+            }
+            80%
+            {
+                transform: translate(400px,60px);
+            }
+            90%
+            {
+                transform: translate(450px,40px);
+            }
+            100%
+            {
+                transform: translate(450px,10px);
+            }
+        }
+        .sub2
+        {
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            border-radius: 50%;
+            margin: 30px;
+            animation: transformer2 8s linear infinite;
+        }
+         @keyframes transformer2
+        {
+            0%{transform: translate(10px,20px);}
+            10%{
+                transform: translate(50px,40px);
+            }
+            20%{
+                transform: translate(100px,50px);
+            }
+            30%
+            {
+                transform: translate(200px,80px);
+            }
+            40%
+            {
+                transform: translate(250px,90px);
+            }
+            50%
+            {
+                transform: translate(300px,50px);
+            }
+            60%
+            {
+                transform: translate(300px,50px);
+            }
+            70%
+            {
+                transform: translate(350px,40px);
+            }
+            80%
+            {
+                transform: translate(400px,20px);
+            }
+            90%
+            {
+                transform: translate(400px,10px);
+            }
+            100%
+            {
+                transform: translate(400px,15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub1"></div>
+        <div class="sub2"></div>
+    </div>
+</body>
+</html>
