@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            counter-reset: hardik;
+        }
+        p::before
+        {
+            counter-increment:hardik;
+            content:counter(hardik) ". ";
+        }
+    </style>
+</head>
+<body>
+    <p>content</p>
+    <p>content</p>
+    <p>content</p>
+    <p>content</p>
+    <p>content</p>
+    <p>content</p>
+    <p>content</p>
+</body>
+</html>

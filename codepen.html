@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  *, *::before, *::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  perspective: 800px;
+  overflow: hidden;
+}
+body *:not(:empty) {
+  transform-style: preserve-3d;
+}
+
+.boxes {
+  position: relative;
+  -webkit-animation: rotate 16s infinite linear;
+          animation: rotate 16s infinite linear;
+}
+@-webkit-keyframes rotate {
+  to {
+    rotate: y 1turn;
+  }
+}
+@keyframes rotate {
+  to {
+    rotate: y 1turn;
+  }
+}
+
+.boxWrapper {
+  position: absolute;
+  -webkit-animation: boxP1 32s var(--delay, 0s) infinite ease-in-out, boxP2 10.6666666667s calc(var(--delay, 0s) / 1) infinite ease-in-out;
+          animation: boxP1 32s var(--delay, 0s) infinite ease-in-out, boxP2 10.6666666667s calc(var(--delay, 0s) / 1) infinite ease-in-out;
+}
+@-webkit-keyframes boxP1 {
+  0% {
+    rotate: 0deg;
+  }
+  4%, 16.666% {
+    rotate: 60deg;
+  }
+  20.666%, 33.333% {
+    rotate: 120deg;
+  }
+  37.333%, 50% {
+    rotate: 180deg;
+  }
+  54%, 66.666% {
+    rotate: 240deg;
+  }
+  70.666%, 83.333% {
+    rotate: 300deg;
+  }
+  87.333%, 100% {
+    rotate: 360deg;
+  }
+}
+@keyframes boxP1 {
+  0% {
+    rotate: 0deg;
+  }
+  4%, 16.666% {
+    rotate: 60deg;
+  }
+  20.666%, 33.333% {
+    rotate: 120deg;
+  }
+  37.333%, 50% {
+    rotate: 180deg;
+  }
+  54%, 66.666% {
+    rotate: 240deg;
+  }
+  70.666%, 83.333% {
+    rotate: 300deg;
+  }
+  87.333%, 100% {
+    rotate: 360deg;
+  }
+}
+@-webkit-keyframes boxP2 {
+  0%, 11%, 50%, 61%, 100% {
+    transform: rotateX(0deg) translateY(-128px);
+  }
+  5.5% {
+    transform: rotateX(90deg) translateY(-168px);
+  }
+  55.5% {
+    transform: rotateX(-90deg) translateY(-168px);
+  }
+}
+@keyframes boxP2 {
+  0%, 11%, 50%, 61%, 100% {
+    transform: rotateX(0deg) translateY(-128px);
+  }
+  5.5% {
+    transform: rotateX(90deg) translateY(-168px);
+  }
+  55.5% {
+    transform: rotateX(-90deg) translateY(-168px);
+  }
+}
+.boxWrapper:nth-child(1) {
+  --delay: 0s;
+  --hue: 0;
+}
+.boxWrapper:nth-child(2) {
+  --delay: -4.5714285714s;
+  --hue: 102.8571428571;
+}
+.boxWrapper:nth-child(3) {
+  --delay: -9.1428571429s;
+  --hue: 205.7142857143;
+}
+.boxWrapper:nth-child(4) {
+  --delay: -13.7142857143s;
+  --hue: 308.5714285714;
+}
+.boxWrapper:nth-child(5) {
+  --delay: -18.2857142857s;
+  --hue: 411.4285714286;
+}
+.boxWrapper:nth-child(6) {
+  --delay: -22.8571428571s;
+  --hue: 514.2857142857;
+}
+.boxWrapper:nth-child(7) {
+  --delay: -27.4285714286s;
+  --hue: 617.1428571429;
+}
+
+.box {
+  position: absolute;
+  inset: -40px;
+  -webkit-animation: box 10.6666666667s calc(var(--delay, 0s) / 1) infinite;
+          animation: box 10.6666666667s calc(var(--delay, 0s) / 1) infinite;
+}
+@-webkit-keyframes box {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  14% {
+    transform: rotateY(125deg) rotateX(-250deg);
+  }
+  50% {
+    transform: rotateY(135deg) rotateX(-270deg);
+  }
+  64% {
+    transform: rotateY(260deg) rotateX(-520deg);
+  }
+  100% {
+    transform: rotateY(270deg) rotateX(-540deg);
+  }
+}
+@keyframes box {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  14% {
+    transform: rotateY(125deg) rotateX(-250deg);
+  }
+  50% {
+    transform: rotateY(135deg) rotateX(-270deg);
+  }
+  64% {
+    transform: rotateY(260deg) rotateX(-520deg);
+  }
+  100% {
+    transform: rotateY(270deg) rotateX(-540deg);
+  }
+}
+.box div {
+  position: absolute;
+  inset: 0;
+  background-color: hsl(var(--hue), 75%, 75%);
+  background-image: repeating-radial-gradient(#0000 0 3px, #0001 0 6px), repeating-radial-gradient(circle at top left, #0000 0 3px, #0001 0 6px), repeating-radial-gradient(circle at top right, #0000 0 3px, #0001 0 6px), repeating-radial-gradient(circle at bottom right, #0000 0 3px, #0001 0 6px), repeating-radial-gradient(circle at bottom left, #0000 0 3px, #0001 0 6px);
+  box-shadow: 0 0 40px #000 inset;
+}
+.box div:nth-child(1) {
+  transform: translateZ(40px);
+}
+.box div:nth-child(2) {
+  transform: rotateY(90deg) translateZ(40px);
+}
+.box div:nth-child(3) {
+  transform: rotateY(180deg) translateZ(40px);
+}
+.box div:nth-child(4) {
+  transform: rotateY(270deg) translateZ(40px);
+}
+.box div:nth-child(5) {
+  transform: rotateX(90deg) translateZ(40px);
+}
+.box div:nth-child(6) {
+  transform: rotateX(270deg) translateZ(40px);
+}
+</style>
+</head>
+<body>
+    
+    <div class="boxes">
+        <div class="boxWrapper">
+          <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="boxWrapper">
+          <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="boxWrapper">
+          <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="boxWrapper">
+          <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="boxWrapper">
+          <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="boxWrapper">
+          <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="boxWrapper">
+          <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body *
+        {
+            /* border: 1px solid black; */
+        }
+        .mainround
+        {
+            height: 500px;
+            width: 500px;
+            background-color: pink;
+            position: relative;
+            border-radius: 50%;
+            margin: 100px auto;
+            /* z-index: 0; */
+        }
+        .subround1
+        {
+            height: 200px;
+            width: 100px;
+            background-color: white;
+            position: absolute;
+            top: 170px;
+            left: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .close1
+        {
+            height: 200px;
+            width: 100px;
+            background-color: crimson;
+            position: absolute;
+            top: 170px;
+            left: 200px;
+            border-radius: 50%;
+            z-index: 1; 
+            
+            animation: closer 1s alternate-reverse infinite;  
+        }
+        .sub1
+        {
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border-radius: 50%;
+            transform: translate(0px,100px);
+            animation: eyes 1s alternate-reverse infinite;
+        }
+        .subround2
+        {
+            height: 200px;
+            width: 100px;
+            background-color: white;
+            position: absolute;
+            top: 170px;
+            left: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .close2
+        {
+            height: 200px;
+            width: 100px;
+            background-color: crimson;
+            position: absolute;
+            top: 170px;
+            left: 300px;
+            border-radius: 50%;
+            z-index: 1;
+            animation: closer 1s alternate-reverse infinite;
+
+        }
+        .sub2
+        {
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border-radius: 50%;
+            transform: translate(0px,100px);
+            animation: eyes 1s alternate-reverse infinite;
+        }
+        @keyframes eyes
+        {
+            0%{
+                transform: translate(0px,100px);
+            }
+            100%
+            {
+                transform: translate(50px,100px);
+            }
+        }
+        @keyframes closer
+        {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            100%
+            {
+                top: -200px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mainround">
+        <div class="subround1">
+            <div class="close1"></div>
+            <div class="sub1"></div>
+        </div>
+        <div class="subround2">
+            <div class="close2"></div>
+            <div class="sub2"></div>
+        </div>
+    </div>
+</body>
+</html>
