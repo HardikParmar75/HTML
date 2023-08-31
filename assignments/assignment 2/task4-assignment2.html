@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body *
+        {
+            /* border: 1px solid black; */
+        }
+        body
+        {
+            box-sizing: border-box;
+        }
+        .main1
+        {
+            height: 500px;
+            background: url(skyballons.jpg);
+            background-size: 100% 100%;
+            clip-path: polygon(0% 0%,100% 0%,100% 80%,50% 100%,0% 80%,0% 0%);
+            position: relative;
+
+        }
+        .sub1
+        {
+            height: 50px;
+            display: flex;
+        }
+        .sb1
+        {
+            width: 30%;
+            text-align: right;
+        }
+        .s1
+        {
+            height: 40px;
+            width: 100px;
+            border: 5px solid blueviolet;
+            font-size: 35px;
+            margin: 0 0 0 300px;
+            color: white;
+
+        }
+        span
+        {
+            background-color: aliceblue;
+            font-size: 35px;
+            color: black;
+        }
+        .sb2
+        {
+            margin: 0 0 0 200px;   
+        }
+        ul
+        {
+            margin: 0;
+            padding: 0;
+            word-spacing: 30px;
+            color: white;
+            font-size: 20px;
+        }
+        li
+        {
+            list-style-type: none;
+            display: inline;
+            text-align: center;
+        }
+        .center
+        {
+            height: 350px;
+            width: 800px;
+            color: white;
+            position: absolute;
+            top: 80px;
+            left: 320px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .p1
+        {
+            font-size: 50px;
+        }
+        button
+        {
+            padding: 10px;
+            color: white;
+            background-color: transparent;
+            border: 1px solid white;
+        }
+        .b1
+        {
+            background-color: orangered;
+        }
+        .main2
+        {
+            height: 30%;
+            display: flex;
+            text-align: center;
+        }
+        .sleek,.clean,.creative,.free
+        {
+            width: 25%;
+            /* display: flex; */
+            text-align: center;
+        }
+        .sm1,.sm2,.sm3,.sm4
+        {
+            height: 50px;
+            width: 50px;
+            background-color: gray;
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+        .sm1
+        {
+            clip-path: polygon(50% 0%,100% 50%,50% 100%,0% 50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <div class="sub1">
+            <div class="sb1">
+                <div class="s1"><span>L</span>OGO</div>
+            </div>
+            <div class="sb2">
+                <ul>
+                    <li>home</li>
+                    <li>aboutus</li>
+                    <li>portfolio</li>
+                    <li>pricing</li>
+                    <li>team</li>
+                    <li>blog</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+            <div class="center">
+                <p>Our clients are our first priority</p>
+                <p class="p1">WELCOME TO SKY</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eum quaerat ab porro accusantium, perspiciatis minus aliquam eius, veniam aliquid debitis quisquam enim fugiat vero nostrum! Impedit itaque quidem eveniet.</p>
+                <button class="b1">STARTED NOW</button>
+                <button>LEARN MORE</button>
+            </div>
+        </div>
+    </div>
+    <div class="main2">
+        <div class="sleek">
+            <div class="sm1"><i class="fa-solid fa-infinity"></i></div>
+            <p>sleek design</p>
+            <p>Lorem ipsum dolor sit amet consectetur</p> 
+            <p>adipisicing elit. Non quidem atque</p>
+            <p>sed assumenda aut excepturi</p> 
+        </div>
+        <div class="clean">
+            <div class="sm2"><i class="fa-regular fa-heart"></i></div>
+            <p>clean code</p>
+            <p>Lorem ipsum dolor sit amet consectetur</p> 
+            <p>adipisicing elit. Non quidem atque</p>
+            <p>sed assumenda aut excepturi</p>
+        </div>
+        <div class="creative">
+            <div class="sm3"><i class="fa-regular fa-lightbulb"></i></div>
+            <p>creative ideas</p>
+            <p>Lorem ipsum dolor sit amet consectetur</p> 
+            <p>adipisicing elit. Non quidem atque</p>
+            <p>sed assumenda aut excepturi</p>
+        </div>
+        <div class="free">
+            <div class="sm4"><i class="fa-regular fa-file"></i></div>
+            <p>free support</p>
+            <p>Lorem ipsum dolor sit amet consectetur</p> 
+            <p>adipisicing elit. Non quidem atque</p>
+            <p>sed assumenda aut excepturi</p>
+        </div>
+    </div>
+</body>
+</html>
