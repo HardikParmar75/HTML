@@ -1,6 +1,6 @@
         body *
         {
-            /* border: 1px solid black; */
+            border: 1px solid black;
             box-sizing: border-box;
         }
         body
@@ -117,6 +117,11 @@
         /* navbar end */
 
         /* subheader start */
+        .subheader
+        {
+            background-color: black;
+            color: white;
+        }
         .s1
         {
             height: 20px;
@@ -299,12 +304,13 @@
         {
             height: 400px;
             width: 90%;
-            margin-top: 90px;
+            margin-top: 70px;
             background-color: white;
         }
         .dd
         {
             padding-left: 20px;
+            padding-top: 20px;
         }
         .ans
         {
@@ -697,6 +703,7 @@
             font-size: 20px;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             transform: translate(50px,10px);
+            width: 75px;
         }
         .gb3
         {
@@ -706,6 +713,7 @@
             text-decoration: line-through;
             transform: translate(130px,-16px);
             color: gray;
+            width: 73px;
         }
         .button2
         {
@@ -784,10 +792,17 @@
             left: 50%;
             transform: translate(-50%,-50%);
             transition: .31s;
+            z-index: 1;
+            opacity: 0;
+/*            text-align: center;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .icon:hover .icon1
         {
             width: 110px;
+            opacity: 1;
         }
         .coupons
         {
@@ -805,17 +820,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            z-index: 1;
+            color: white;
+            font-size: 35px;
         }
         .it1
         {   
             width: 70%;
-        }
-        .i
-        {
-            color: white;
-            font-size: 40px;
-            z-index: 2;
         }
         .shipping,.support,.garuntee,.coupons
         {

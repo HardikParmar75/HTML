@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            height: 300px;
+            width: 300px;
+            margin: 100px auto;
+            background-color: blue;
+            animation: round 2.5s alternate-reverse infinite;
+        }
+        @keyframes round
+        {
+            0%{
+                border-radius: 80% 30% 40% 80%;
+            }
+            50%
+            {
+                border-radius: 30% 60% 50% 60%;
+            }
+            100%
+            {
+                border-radius: 30% 50% 50% 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+</body>
+</html>

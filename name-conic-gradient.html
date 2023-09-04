@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainco
+        {
+            height: 100px;
+            width: 300px;
+            background: conic-gradient(at 80%,blue 90deg,transparent 90deg);
+            /* border: 1px solid; */
+            position: relative;
+        }
+        .sub1
+        {
+            content: "";
+            height: 100px;
+            width: 300px;
+            background: conic-gradient(from 270deg at 20%,transparent 270deg,blue 180deg);
+            /* border: 1px solid; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+        .sub
+        {
+            height: 70px;
+            width: 270px;
+            background-color: white;
+            text-align: center;
+            line-height: 70px;
+            font-size: 30px;
+            letter-spacing: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-family: cursive;
+            font-weight: bold;
+            color: black;
+        }
+        .p
+        {
+            height: 100px;
+            width: 300px;
+            background: conic-gradient(blue 0deg,blue 90deg,white 90deg,white 180deg,blue 180deg, blue 270deg,white 270deg,white 360deg);
+           position: relative;
+        }
+        .p1
+        {
+            height: 70px;
+            width: 270px;
+            background-color: white;
+            text-align: center;
+            line-height: 70px;
+            font-size: 30px;
+            letter-spacing: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-family: cursive;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainco">
+        <div class="sub1"></div>
+        <div class="sub">hardik</div>
+    </div>
+    <div class="p">
+        <div class="p1">hardik</div>
+    </div>
+</body>
+</html>

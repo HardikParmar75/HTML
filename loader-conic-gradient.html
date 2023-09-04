@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background: black;
+        }
+        .main
+        {
+            height: 300px;
+            width: 300px;
+            background-color: transparent;
+            border-radius: 50%;
+            margin: 100px auto;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .m1
+        {
+            height: 200px;
+            width: 200px;
+            background: conic-gradient(black,blue);
+            
+            animation: round 1s linear infinite;
+            border-radius: 50%;
+        }
+        .m2
+        {
+            height: 180px;
+            width: 180px;
+            background: black;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 180px;
+            font-size: 30px;
+        }
+        @keyframes round
+        {
+            0%
+            {
+                transform: rotate(0);
+            }
+            100%
+            {
+                transform: rotate(360deg)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="m1"></div>
+        <div class="m2">loading...</div>
+    </div>
+</body>
+</html>

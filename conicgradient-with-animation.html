@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            height: 200px;
+            width: 200px;
+            /* border: 1px solid; */
+            background: repeating-conic-gradient(red 0deg,red 20deg,transparent 50deg,transparent 90deg);
+            border-radius: 50%;
+            animation: rotate 1s alternate-reverse infinite;
+            margin: 100px auto;
+        }
+        @keyframes rotate 
+        {
+            from{
+                transform: rotate(0) scale(0);
+            }
+            to{
+                transform: rotate(360deg) scale(1);
+            }      
+        } 
+    </style>
+</head>
+<body>
+    <div class="main">
+    </div>
+</body>
+</html>
