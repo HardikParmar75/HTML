@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heart1
+        {
+            height: 300px;
+            width: 200px;
+            background-color: purple;
+            transform: rotate(-51deg) translate(20px,50px);
+            border-radius: 50% 50% 0 0;
+            /* margin: 100px auto; */
+            animation: beat1 .31s linear infinite;
+        }
+        .heart2
+        {
+            height: 300px;
+            width: 200px;
+            background-color: purple;
+            transform: rotate(41deg) translate(-80px,-300px);
+            border-radius: 50% 50% 0 0;
+            animation: beat .31s linear infinite;
+        }
+        @keyframes beat
+        {
+            0%{
+                transform: rotate(41deg) translate(-80px,-300px) scale(95%);
+            }
+            100%
+            {
+                transform: rotate(41deg) translate(-80px,-300px) scale(100%);
+            }
+        }
+        @keyframes beat1
+        {
+            0%{
+                transform: rotate(-51deg) translate(20px,50px) scale(95%);
+            }
+            100%
+            {
+                transform: rotate(-51deg) translate(20px,50px) scale(100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="heart1"></div>
+    <div class="heart2"></div>
+</div>
+</body>
+</html>
