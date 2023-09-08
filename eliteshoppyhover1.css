@@ -275,11 +275,12 @@
         .wholeflip
         {
             display: none;
+            /* flex-wrap: wrap; */
         }
         .li1:hover .wholeflip
         {
-            display: flex;
-            flex-wrap: wrap;
+            display: flex; 
+            flex-wrap: wrap; 
         }
         .wholeflip2
         {

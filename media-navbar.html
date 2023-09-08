@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            background-color: black;
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+        }
+        a
+        {
+            color: white;
+            text-decoration: none;
+        }
+        span
+        {
+            display: none;
+        }
+        li
+        {
+            border: 1px solid white;
+            list-style-type: none;
+            display: inline;
+            text-align: center;
+            padding: 10px;
+        }
+        @media(max-width:800px)
+        {
+            li{
+                display: block;
+            }
+        }
+        @media(max-width:500px)
+        {
+            li{
+                display: none;
+            }
+            span{
+                display: block;
+            }
+        }
+        .fa-bars:hover li
+        {
+            display: block;
+        }
+        .b{
+            display: none;
+        }
+        .a:hover .b{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <span>
+            <i class="fa fa-bars">
+                <ul>
+            <li><a href="">col1</a></li>
+            <li class="a"><a href="">col2
+                <ul class="b">
+                    <li><a href="">col1</a></li>
+                    <li><a href="">col2</a></li>
+                    <li><a href="">col3</a></li>
+                    <li><a href="">col4</a></li>
+                </ul>
+            </a></li>
+            <li><a href="">col3</a></li>
+            <li><a href="">col4</a></li>
+        </ul></i>
+        </span>
+        <ul>
+            <li><a href="">col1</a></li>
+            <li><a href="">col2</a></li>
+            <li><a href="">col3</a></li>
+            <li><a href="">col4</a></li>
+        </ul>
+    </div>
+</body>
+</html>

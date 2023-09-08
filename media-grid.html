@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main
+        {
+            background-color: black;
+            color: white;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+            grid-template-rows: 100px;
+        }
+        .col
+        {
+            border: 1px solid white;
+        }
+        @media(max-width:800px)
+        {
+            .main{
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: 100px 100px;}
+        }
+        @media(max-width:500px)
+        {
+            .main{
+            grid-template-columns: 2fr;
+            grid-template-rows: 100px 100px 100px 100px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="col col1">col1</div>
+        <div class="col col2">col2</div>
+        <div class="col col3">col3</div>
+        <div class="col col4">col4</div>
+    </div>
+</body>
+</html>

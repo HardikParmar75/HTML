@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main
+        {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col
+        {
+            width: 25%;
+            border: 1px solid white;
+        }
+        @media(max-width:800px)
+        {
+            .col
+            {
+                width: 50%;
+            }
+        }
+        @media(max-width:500px)
+        {
+            .col
+            {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="col col1">col1</div>
+        <div class="col col2">col2</div>
+        <div class="col col3">col3</div>
+        <div class="col col4">col4</div>
+    </div>
+</body>
+</html>

@@ -1,6 +1,6 @@
         body *
         {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             box-sizing: border-box;
         }
         body
@@ -145,6 +145,22 @@
             /* background-color: black; */
             /* color: white;  */
             font-size: 20px;
+            position: relative;
+        }
+        .subheader li::after
+        {
+            content: "";
+            height: 9px;
+            width: 0px;
+            background-color: #2fdab8;
+            position: absolute;
+            top: 85%;
+            left: 0;
+            transition: .31s;
+        }
+        .subheader li:hover::after
+        {
+            width: 100%;
         }
         .cart
         {
@@ -207,7 +223,7 @@
         }
         .a1::after
         {
-            content: "";
+            content: "New arrivals";
             background: transparent;
             height: 250px;
             width: 500px;
@@ -220,6 +236,8 @@
             position: absolute;
             top: 10px;
             left: 0px;
+            text-align: right;
+            line-height: 300px;
         }
         .a1:hover::after
         {
@@ -246,7 +264,7 @@
         }
         .a2::after
         {
-            content: "";
+            content: "New arrivals";
             background: transparent;
             height: 250px;
             width: 500px;
@@ -259,6 +277,8 @@
             position: absolute;
             top: 10px;
             left: 0px;
+            text-align: right;
+            line-height: 300px;
         }
         .a2:hover::after
         {
@@ -335,6 +355,9 @@
             align-items: center;
             font-size: 45px;
         }
+        .n1{
+            font-weight: bold;
+        }
         /* letter end */
 
         /* sale start */
@@ -369,7 +392,7 @@
         }
         .i1::after
         {
-            content: "";
+            content: "upto 55%";
             background: transparent;
             height: 550px;
             width: 550px;
@@ -382,6 +405,8 @@
             position: absolute;
             top: 10px;
             left: 0px;
+            text-align: right;
+            line-height: 300px;
         }
         .i1:hover::after
         {
@@ -412,7 +437,7 @@
         }
         .i3::after
         {
-            content: "";
+            content: "upto 55%";
             background: transparent;
             height: 220px;
             width: 550px;
@@ -425,6 +450,8 @@
             position: absolute;
             top: 10px;
             left: 0px;
+            text-align: right;
+            line-height: 220px;
         }
         .i3:hover::after
         {
@@ -449,7 +476,7 @@
         }
         .i5::after
         {
-            content: "";
+            content: "upto 55%";
             background: transparent;
             height: 220px;
             width: 550px;
@@ -462,6 +489,8 @@
             position: absolute;
             top: 10px;
             left: 0px;
+            text-align: right;
+            line-height: 220px;
         }
         .i5:hover::after
         {
@@ -785,15 +814,15 @@
         .icon1
         {
             height: 100px;
-            width: 0px;
+            width: 100%;
             background-color: #2fdab8;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%) scale(0);
             transition: .31s;
             z-index: 1;
-            opacity: 0;
+            /* opacity: 0; */
 /*            text-align: center;*/
             display: flex;
             justify-content: center;
@@ -801,8 +830,8 @@
         }
         .icon:hover .icon1
         {
-            width: 110px;
-            opacity: 1;
+           transform:translate(-50%,-50%) scale(1);
+            /* opacity: 1; */
         }
         .coupons
         {
@@ -839,12 +868,17 @@
             background-color: black;
             color: white;
             padding-top: 50px;
+            padding-bottom: 50px;
         }
         .f1,.f2,.f3,.f4
         {
             width: 25%;
             /* display: flex; */
             text-align: center;
+        }
+        .f1,.f2,.f3
+        {
+            border-right: 1px solid white;
         }
         .icon3
         {

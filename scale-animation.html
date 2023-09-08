@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .main
+        {
+            height: 200px;
+            width: 200px;
+            /* background-color: black; */
+            margin: 100px auto;
+            position: relative;
+            animation: round 1s alternate-reverse linear infinite;
+        }
+        .a1,.a2,.a3,.a4
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        .a1
+        {
+            background-color: yellow;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .a2
+        {
+            background-color: blue;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .a3
+        {
+            background-color: green;
+            position: absolute;
+            top: 150px;
+            left: 0;
+        }
+        .a4
+        {
+            background-color: gray;
+            position: absolute;
+            top: 150px;
+            right: 0;
+        }
+        @keyframes round
+        {
+            from
+            {
+                transform: rotate(0deg) scale(.1);
+            }
+            to
+            {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="a1"></div>
+        <div class="a2"></div>
+        <div class="a3"></div>
+        <div class="a4"></div>
+    </div>
+</body>
+</html>
