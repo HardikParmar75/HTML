@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            box-sizing: border-box;
+            background-color: black;
+        }
+        .main
+        {
+            height: 300px;
+            width: 300px;
+            background-color: black;
+            margin: 200px auto;
+            position: relative;
+            border-top: 1px solid white;
+            border-radius: 50%;
+            animation: roundbig 5s linear infinite;
+        }
+        .sun
+        {
+            height: 150px;
+            width: 150px;
+            background-color: gold;
+            box-shadow: 0 0 25px white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        /* .main2
+        {
+            border-color: white;
+            border-width: 0.1em 0.1em 0 0;
+        } */
+        .earthdiv
+        {
+            height: 80px;
+            width: 80px;
+            /* background-color: wheat; */
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-left: 2px solid white;
+            border-radius: 50%;
+            /* box-shadow: 0 0 25px white */
+            animation: roundbig .8s linear infinite;
+            
+        }
+        /* .earth
+        {
+            height: 30px;
+            width: 30px;
+            background-color: blue;
+        } */
+        .moon
+        {
+            height: 30px;
+            width: 30px;
+            background-color: gray;
+            border-radius: 50%;
+        }
+        @keyframes roundbig
+        {
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sun"></div>
+        <div class="main2">
+            <div class="earthdiv">
+                <div class="earth"></div>
+                <div class="moon"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
