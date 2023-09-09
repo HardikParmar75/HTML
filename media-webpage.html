@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body *{
+            /* border: 1px solid white; */
+            box-sizing: border-box;
+        }
+        .main
+        {
+            height: 700px;
+            background: url(https://preview.colorlib.com/theme/staging/img/hero/hero-1.jpg.webp);
+            background-size: cover;
+            color: white;
+            display: grid;
+            grid-template-rows: 1fr 8fr 1fr;
+        }
+        .navbar
+        {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            padding: 20px;
+        }
+        span{
+            color: orange;
+        }
+        .n1
+        {
+            font-size: 40px;
+            text-align: center;
+        }
+        .n2
+        {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+        }
+        .n2::after
+        {
+            content: "";
+            height: 10px;
+            width: 100%;
+            background-color: orange;
+        }
+        .n22
+        {
+            font-size: 30px;
+            display: inline;
+        }
+        .n3
+        {
+            text-align: center;
+            font-size: 25px;
+        }
+        .f{
+            display: inline;
+        }
+        .letters
+        {
+            display: grid;
+            grid-template-columns: 20fr 60fr 20fr;
+        }
+        .l1
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .l2
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+        .l3
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grade
+        {
+            height: 50px;
+            width: 100px;
+            position: relative;
+        }
+        .g2
+        {
+            height: 25px;
+            width: 50px;
+            background-color: white;
+        }
+        .g1
+        {
+            height: 25px;
+            width: 50px;
+            transform: translate(100%,0);
+            background-color: white;
+        }
+        .grade:hover .g1
+        {
+            transform: translate(0,0);
+            width: 100px;
+        }
+        .grade:hover .g2
+        {
+            transform: translate(0,0);
+            width: 100px;
+        }
+        .g3
+        {
+            height: 45px;
+            width: 95px;
+            position: absolute;
+            top: 2.5px;
+            left: 2.5px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 30px;
+            background: url(https://preview.colorlib.com/theme/staging/img/hero/hero-1.jpg.webp);
+            background-size: contain;
+        }
+        .downsec
+        {
+            display: grid;
+            grid-auto-columns: 2fr 2fr 2fr;
+        }
+        .n33
+        {
+            line-height: 50px;
+            word-spacing: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="n1">Staging<span>.</span></div>
+            <div class="n2">
+                <div class="n11">home</div>
+                <div class="n11">projects</div>
+                <div class="n11">about</div>
+                <div class="n11">pages</div>
+                <div class="n11">blog</div>
+                <div class="n11">contact</div>
+            </div>
+            <div class="n3">Call us for any questions<br>
+               <span>+01 123 456 789</span></div>
+        </div>
+        <div class="letters">
+            <div class="l1">
+                <div class="grade">
+                    <div class="g1"></div>
+                    <div class="g2"></div>
+                    <div class="g3"><i class="fa-solid fa-less-than"></i></div>
+                </div>   
+            </div>
+            <div class="l2">
+                QUALITY IS NOT ONLY<br>
+                 OUR STANDARD.<br>
+                     <!-- <div class="grade"> 
+                        <div class="g1"></div>
+                        <div class="g2"></div>
+                        <div class="g3">see</div> 
+                    </div>  -->
+            </div>
+            <div class="l3">
+                <div class="grade">
+                    <div class="g1"></div>
+                    <div class="g2"></div>
+                    <div class="g3"><i class="fa-solid fa-greater-than"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="n1">0 and 1</div>
+            <div class="n2 n22">discover more</div>
+            <div class="n3 n33">
+                <div class="f"><i class="fa-brands fa-facebook"></i></div>
+                <div class="f"><i class="fa-brands fa-twitter"></i></div>
+                <div class="f"><i class="fa-brands fa-instagram"></i></div>
+                <div class="f"><i class="fa-brands fa-linkedin"></i></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
