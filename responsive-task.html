@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body *{
+            /* border: 1px solid black; */
+            font-size: 20px;
+            /* text-align: center; */
+        }
+        .main
+        {
+            /* height: 1000px; */
+            background-color: wheat;
+            display: grid;
+            grid-template-rows: 4fr 6fr .5fr;
+        }
+        .div1
+        {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        .d1{
+            display: grid;
+            grid-template-rows: 2fr 2fr;
+        }
+        .d2{
+            display: grid;
+            grid-template-rows: 2fr 3fr;
+        }
+        .div2
+        {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+        }
+        .d11
+        {
+            display: grid;
+            grid-template-rows: 1fr 2fr;
+        }
+        .d12
+        {
+            display: grid;
+            grid-template-rows: 3fr 1fr;
+        }
+        .div3
+        {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            text-align: center;
+        }
+        .e1
+        {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        span
+        {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        table
+        {
+            border: none;
+        }
+        td
+        {
+            border-bottom: 1px solid;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            padding: 30px;
+        }
+        .z1
+        {
+            font-weight: bold;
+        }
+        @media (max-width:500px) {
+            .div1{
+                display: grid;
+                grid-template-columns: 1fr;
+            } 
+            .div2{
+                display: grid;
+                grid-template-columns: 1fr;
+            } 
+            .div3{
+                display: grid;
+                grid-template-columns: 1fr;
+            }          
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1">
+            <div class="d1">
+                <div class="a1"><span>google inc.</span> <br>
+                    31 lake flydi circle, <br>
+                    dalaware,382450 <br>
+                    bharat.
+                </div>
+                <div class="a2">
+                    <span>ference</span> <br>
+                    ux design & development for <br>
+                    android app.
+
+                </div>
+            </div>
+            <div class="d2">
+                <div class="b1">
+                    <span>acme llp.</span> <br>
+                    477 blackwall street, <br>
+                    dry kreak,alsaka <br>
+                    bharat.
+                </div>
+                <div class="b2">
+                    <span>ace</span> <br>
+                    06 september,2017
+                </div>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="d11">
+                <div class="c1"><span>invoice</span></div>
+                <div class="c2">invoice no <br> <span>bji 009872</span></div>
+            </div>
+            <div class="d12">
+                <div class="e1">
+                    <table>
+                        <tr>
+                            <td class="z1">qty</td>
+                            <td class="z1">description</td>
+                            <td class="z1">price</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>initial research</td>
+                            <td>10000$</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>ux design</td>
+                            <td>35000$</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>web app development</td>
+                            <td>50000$</td>
+                        </tr>
+                        <tr>
+                            <td class="z1">total</td>
+                            <td></td>
+                            <td class="z1">95000$</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="e2">
+                    terms <br>
+                    <ul>
+                        <li>invoice to be paid in advanced.</li>
+                        <li>make payment in 2.3 business days.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="d111">acme.com</div>
+            <div class="d112">contact@acme.com</div>
+            <div class="d113">+91 9598751522</div>
+        </div>
+    </div>
+</body>
+</html>
