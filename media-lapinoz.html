@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body *{
+            border: 1px solid;
+        }
+        .main
+        {
+            /* height: 700px; */
+        }
+        .navbar
+        {
+            /* height: 200px; */
+            display: flex;
+        }
+        .logo
+        {
+            width: 20%;
+        }
+        .slider
+        {
+            width: 80%;
+        }
+        ul
+        {
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        li{
+            list-style-type:none ;
+        }
+        .image
+        {
+            height: 500px;
+            padding: 20px;
+        }
+        .imagewrite1,.imagewrite2{
+            height: 150px;
+        }
+        @media(max-width:500px)
+        {
+            .navbar{
+                display: inline;
+            }
+            ul{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">lapinoz</div>
+            <div class="slider">
+                <ul>
+                    <li>home</li>
+                    <li>order online</li>
+                    <li>store locator</li>
+                    <li>franchieze enquiry</li>
+                    <li>our story</li>
+                    <li>contact us</li>
+                </ul>
+            </div>
+        </div>
+        <div class="image">
+            <div class="imagewrite1"></div>
+            <div class="imagewrite2"></div>
+        </div>
+    </div>
+</body>
+</html>
