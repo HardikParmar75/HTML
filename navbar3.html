@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body *{
+            box-sizing: border-box;
+            border: 1px solid;
+            color: black;
+        }
+        li{
+            display: inline;
+            margin: auto;
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .navbar
+       {
+        background-color: red;
+       }
+       .lii1{
+        position: relative;
+       }
+        .li1
+       {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: blue;
+        padding: 0;
+        visibility: hidden;
+       }
+       .lii1:hover .li1{
+        visibility: visible;
+
+       }
+       .li1 li{
+        padding: 30px;
+       }
+       .img{
+        transform: scale(1);
+        overflow: hidden;
+       }
+       .img,.detail{
+        height: 50%;
+        width: 50%;
+       }
+       img:hover{
+        transform: scale(1.2);
+        transition: 1s;
+       }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="lii1">
+                <a href="">home</a>
+                <ul class="li1">
+                    <li>service1</li>
+                    <li>service2</li>
+                    <li>service3</li>
+                </ul>
+            </li>
+            <li><a href="">about</a></li>
+            <li><a href="">services</a></li>
+            <li><a href="">contact</a></li>
+        </ul>
+    </div>
+    <div class="cart">
+        <div class="img"><img src="bb1.jpg" alt="" height="20%" width="100%"></div>
+        <div class="detail">
+            <p>luxury house in greenville</p>
+            <p>$860,000</p>
+            <p>This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Val ...</p>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="img"><img src="bb1.jpg" alt="" height="100%" width="100%"></div>
+        <div class="detail">
+            <p>luxury house in greenville</p>
+            <p>$860,000</p>
+            <p>This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Val ...</p>
+        </div>
+    </div>
+</body>
+</html>
