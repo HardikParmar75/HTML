@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* .main{
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            margin: 100px auto;
+        }
+        .div1
+        {
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            animation: hover 1s linear infinite;
+        }
+        @keyframes hover{
+            100%{
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+        .div1:hover{
+            background-color: blue;
+            color: white;
+        } */
+        .main{
+            height: 300px;
+            width: 300px;
+            margin: 100px auto;
+            background-color: blue;
+            position: relative;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+        .main::after{
+            content: "";
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            animation: hoverme 1s infinite linear;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+        }
+        .main:hover{
+            background-color: red;
+            color: white;
+        }
+        @keyframes hoverme{
+            50%{
+                background: wheat;
+                filter: blur(5px);
+            }
+            70%{
+                background-color: green;
+                filter: blur(5px);
+            }
+            100%{
+                background-color: cadetblue;
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <i class="fa-brands fa-facebook"></i>
+        <!-- /* <div class="div1"></div> */ -->
+    </div>
+</body>
+</html>
