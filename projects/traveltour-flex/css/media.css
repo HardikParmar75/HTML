@@ -1,0 +1,158 @@
+@media(max-width:500px)
+{
+    .lside1{
+        display: none;
+    }
+    .login1{
+        width: 100%;
+    }
+    .login2{
+        text-align: left;
+        width: 100%;
+    }
+    .detailimg1{
+        padding: 10px;
+        
+    }
+    .detail1,.detail2,.detail3{
+        margin-bottom:20px;
+    }
+    .discription ul li{
+       display: none;
+    }
+    .none
+    {
+        display: block;
+        font-size: 25px;
+        text-align: center;
+    }
+    .discription{
+        width: 50%;
+    }
+    .non1{
+        display: none;
+    }
+    .searchbar{
+        display: inline;
+    }
+    .search,.select,.button{
+        width: 100%;
+    }
+    .logo{
+        padding: 10px;
+        width: 50%;
+    }
+    .detail{
+        word-spacing: 0px;
+        justify-content: space-evenly;
+    }
+    .view{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .big{
+        font-size: 30px;
+    }
+    input,select,button{
+        padding: 10px;
+    }
+    .detailmain{
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+    .destination,.garuntee,.support
+    {
+        width: 100%;
+    }
+    .populardestinations{
+        width: 100%;
+        margin-top: 100%;
+    }
+    .popularrow1,.popularrow2{
+        display: block;
+    }
+    .popimg1,.popimg2,.popimg3,.popimg4,.popimg5
+    {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tour{
+        display: block;
+        margin: 0;
+    }
+    .detail1,.detail2,.detail3
+    {
+        width: 100%;
+        padding: 0px;
+    }
+    .discountmain{
+        display: block;
+        width: 100%;
+    }
+    .discountpart1,.discountpart2{
+        width: 100%;
+    }
+    .highlightsmain{
+        padding: 50px;
+    }
+    .populartext{
+        width: 100%;
+    }
+    .reviewmain{
+        width: 100%;
+    }
+    .reviewpart1,.reviewpart2,.reviewpart3{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .category{
+        display: block;
+        width: 100%;
+    }
+    .catpart1,.catpart2{
+        width: 100%;
+    }
+    /* .subscribe{
+        display: flex;
+        padding: 0px;
+    } */
+    .social ul li{
+        padding: 10px;
+        display: inline;
+    }
+    .learnmap{
+        width: 100%;
+        display: inline;
+    }
+    .img1,.img2,.img3{
+        width: 100%;
+    }
+    .footer{
+        display: block;
+    }
+    .footerpart1,.footerpart2,.footerpart3,.footerpart4{
+        width: 100%;
+    }
+    .activities,.tours{
+        width: 100%;
+    }
+    .dropemail
+    {
+        display: inline;
+    }
+    .but{
+        padding: 10px;
+    }
+    .paper{
+        display: inline;
+        width: 90%;
+    }
+    .ban1{
+        width: 100%;
+    }
+}

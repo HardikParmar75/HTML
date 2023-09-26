@@ -1,0 +1,144 @@
+@media(max-width:500px){
+   .header{
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      
+   }
+   .navbar{
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      
+   }
+   .revive{
+    padding: 0;
+    font-size: 20px;
+    /* margin: 0; */
+    word-spacing: 0;
+   } 
+   .letsgo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+   }
+   .big{
+    font-size: 50px;
+   }
+   .letsgo{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+  .share{
+   display: grid;
+   grid-template-columns: 1fr;
+   padding: 0%;
+   width: 100%;
+  }
+  .raisemain{
+   padding: 0;
+  }
+  .twoparts{
+   display: grid;
+   grid-template-columns: 1fr;
+  }
+  .tourdetail{
+   display: grid;
+   grid-template-columns: 1fr;
+  }
+  .offermain{
+   display: grid;
+   grid-template-rows: 1fr;
+   padding: 0;
+   background-size: cover;
+  }
+  .adventuredetail{
+   width: 90%;
+   display: grid;
+   grid-template-columns: 1fr;
+   margin: 0;
+  }
+  .contactdetails{
+   width: 60%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: 1fr;
+  }
+  .dreammain{
+   padding: 0;
+  }
+  .row1,.row2{
+   display: grid;
+   grid-template-columns: 1fr;
+  }
+  .createmain{
+   display: grid;
+   grid-template-columns: 1fr;
+   padding: 10px;
+   background-size: cover;
+  }
+  .cnumbers{
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.createpart2{
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.productmain{
+   padding: 10px 0 10px 0;
+}
+.prorow1{
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.cart{
+   left: 25%;
+}
+.digitalmain{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 2fr 2fr;
+}
+.imgposition{
+   top: 10%;
+}
+.roundbig{
+   height: 70%;
+
+}
+.googleplay{
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.playstore,.apple{
+   padding: 20px;
+}
+.blogmain{
+   padding: 10px 0 10px 0;
+}
+.blogs{
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.besthikingmain{
+   display: grid;
+   grid-template-columns: 1fr;
+   background-color: black;
+   padding: 10px 0 20px 0;
+}
+.hike1{
+   padding-top: 20px;
+}
+.footer{
+   background-size: cover;
+}
+.lastfooter{
+   display: grid;
+   grid-template-columns: 1fr;
+}
+}
+@media (max-width:1024px){
+   
+}
