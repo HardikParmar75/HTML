@@ -12,21 +12,26 @@
 <body>
     <!-- header start -->
     <div class="header">
-        <div class="logo">0</div>
+        <div class="logo">
+            Hard<span class="blue">ik</span>
+        </div>
         <div class="navbar">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#">Resume</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </div>
     <!-- header end -->
 
     <!-- scroll start -->
-    <div class="scroll">
+    <div class="scrollmain">
         <div class="fullname">
             <p>HEY! I AM</p>
             <h2>Hardik Parmar</h2>
@@ -43,7 +48,7 @@
                 <img src="css/images/WhatsApp Image 2023-09-26 at 21.36.35.jpg" alt="">
             </div>
             <div class="mydetail">
-                <div class="about">
+                <div class="about" id="about">
                     <h1>About Me</h1>
                 </div>
                 <div class="aboutdetail">
@@ -51,35 +56,53 @@
                         <p>Name:</p>
                         <p>DOB:</p>
                         <p>Address:</p>
-                        <p>PinCode:</p>
                         <p>Email:</p>
                         <p>Phone:</p>
                     </div>
                     <div class="gray-part">
-                        <p>Hardik Parmar</p>
+                        <p>Hardik Sanjaybhai Parmar</p>
                         <p>April 18,2005</p>
                         <p>C/58,Rajeshwari Society,Ranip</p>
-                        <p>382480</p>
                         <p>hardikparmar7557@gmail.com</p>
-                        <p>6354082812</p>
+                        <p>6354082819</p>
                     </div>
                 </div>
                 <div class="cv">
-                    <button class="btn"><a href="#">DOWNLOAD CV</a></button>
+                    <button class="btn"><a href="#">VIEW CV</a></button>
+                    <button class="btn"><a href="#">HIRE ME</a></button>
                 </div>
+                
             </div>
         </div>
         <!-- aboutme end -->
 
         <!-- our projects start -->
-        <div class="ourprojects">
+        <div class="ourprojects" id="projects">
             <div class="bigtext">
                 Projects
             </div>
             <div class="projects">
-                <div class="project1">jhdfkjshdf</div>
-                <div class="project1">jsdhkjahsdk</div>
-                <div class="project1">sdkjlakj</div>
+                <div class="project1">
+                    <img src="css/images/home-2-carousel-image-4.jpg" alt="" height="100%" width="100%">
+                    <div class="scroll">
+                        <p>Advenx</p>
+                        <p><a href="advenx-grid/advenx.html">Read More <i class="fa-solid fa-arrow-right"></i></a></p>
+                    </div>
+                </div>
+                <div class="project1">
+                    <img src="css/images/shutterstock_647526577-700x500.jpg" alt="" height="100%" width="100%">
+                    <div class="scroll">
+                        <p>TravelTour</p>
+                        <p><a href="traveltour-flex/traveltour.html">Read More <i class="fa-solid fa-arrow-right"></i></a></p>
+                    </div>
+                </div>
+                <div class="project1">
+                    <img src="css/images/OIP (1).jpeg" alt="" height="100%" width="100%">
+                    <div class="scroll">
+                        <p>Friendliefy</p>
+                        <p><a href="friendliefy/registration_page.html">Read More <i class="fa-solid fa-arrow-right"></i></a></p>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- our projects end -->
@@ -92,7 +115,7 @@
         <!-- freelancing end -->
 
         <!-- contact me start -->
-        <div class="contactme">
+        <div class="contactme" id="contact">
             <div class="bigtext">
                 Contact Me
             </div>
@@ -103,7 +126,7 @@
                     </div>
                     <div class="contact-via">
                         <p class="black">Address</p>
-                        <p>C/58,Rajeshwari Society,Ranip 382480</p>
+                        <p>C/58,Rajeshwari Society,Near Nishan School,Ranip-382480</p>
                     </div>
                 </div>
                 <div class="con1">
@@ -133,24 +156,14 @@
     <!-- footer start -->
     <div class="footer">
         <div class="socialmedia">
-            <p class="big">Follow Me Here</p>
-            <a href="#" class="fa-brands fa-instagram fa-2x" style="color: #db3236 ;"></a>
-            <a href="#"class="fa-brands fa-linkedin fa-2x" style="color: #0866FF;"></a>
-            <a href="#"class="fa-brands fa-snapchat fa-2x" style="color: #26a7de;"></a>
+            <p class="big">Also Contact With:
+            <a href="https://github.com/HardikParmar75/HTML"class="fa-brands fa-github fa-1x" style="color: #26a7de;"></a>
+            <a href="#"class="fa-brands fa-linkedin fa-1x" style="color: #0866FF;"></a>
+            <a href="https://www.instagram.com/hardiik_0507/" class="fa-brands fa-instagram fa-1x" style="color: #db3236 ;"></a>
+            </p>
         </div>
-        <div class="links">
-            <p class="big">Links</p>
-            <ul>
-                <li><a href="#"><span class="fa-solid fa-arrow-right"></span> Home</a></li>
-                <li><a href="#"><span class="fa-solid fa-arrow-right"></span> About</a></li>
-                <li><a href="#"><span class="fa-solid fa-arrow-right"></span> Resume</a></li>
-                <li><a href="#"><span class="fa-solid fa-arrow-right"></span> Projects</a></li>
-                <li><a href="#"><span class="fa-solid fa-arrow-right"></span> contact</a></li>
-            </ul>        
-        </div>
-        <div class="address">
-            <p class="big">Have a Questions?</p>
-
+        <div class="thank">
+            <p class="big">Thank You.</p>
         </div>
     </div>
     <!-- footer end -->

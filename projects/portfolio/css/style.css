@@ -1,13 +1,17 @@
 body *{
     box-sizing: border-box;
-    /* border: 1px solid; */
     font-family: 'Poppins';
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: black;
+    color: white;
+}
 a{
     text-decoration: none;
     color: gray;
+    background: none;
 }
 button{
     border: none;
@@ -34,14 +38,14 @@ button{
     position: relative;
 }
 .navbar ul li a:hover{
-    color: black;
+    color: white;
     transition: .31s;
 }
 .navbar ul li::after{
     content: "";
     height: 5px;
     width: 100%;
-    background-color: blue;
+    background-color: #26a7de;
     position: absolute;
     top: 100%;
     right: 0;
@@ -53,11 +57,32 @@ button{
     opacity: 1; 
     transform: scale(1);
 }
+.logo{
+    font-size: 55px;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+}
+.bar{
+    margin: auto;
+}
+.fa-bars{
+    display: none;
+    font-size: 30px;
+    margin: auto;
+}
+.blue{
+    color: #26a7de;
+    font-weight: bold;
+    font-family: cursive;
+}
 /* header end */
 
 /* scroll start */
 .fullname{
-    width: 50%;
+    background: url(images/vintage_pens_writing_paper_74945_1920x1080.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
     text-align: center;
     margin: auto;
     font-size: 55px;
@@ -100,28 +125,29 @@ button{
     color: gray;
 }
 .gray-part p:hover{
-    color: black;
+    color: white;
 }
 .btn{
-    height: 70px;
+    height: 60px;
     width: 30%;
     border-radius: 20px;
-    background-color: blue;
+    background-color: #26a7de;
     font-weight: bold;
     cursor: pointer;
-    font-size: 18px;
-    box-shadow: 0 0 5px black;
+    font-size: 22px;
+    box-shadow: 0 0 10px gray;
     transition: .31s;
+    margin-right: 20px;
 }
 .btn a{
     color: white;
 }
 .btn:hover{
     background-color: white;
-    color: blue;
+    color: #26a7de;
 }
 .btn:hover a{
-    color: blue;
+    color: #26a7de;
 }
 /* aboutme end */
 
@@ -141,12 +167,41 @@ button{
     width: 80%;
     margin: auto;
 }
+.project1{
+    position: relative;
+}
+.scroll{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 55%;
+    overflow: hidden;
+    transition: .31s;
+}
+.scroll p{
+    padding: 20px;
+}
+.project1:hover .scroll{
+    padding-top: 20%;
+    background-color: rgba(0, 0, 0, 0.482);
+}
+.scroll a{
+    color: white;
+}
+.scroll a:hover{
+    color: orangered;
+}
 /* our projects end */
 
 /* freelancing start */
 .freelancing{
     text-align: center;
-    background-color: blue;
+    background-color: #26a7de;
     color: white;
     padding: 100px;
     margin-top: 5%;
@@ -162,10 +217,10 @@ button{
     box-shadow: 0 0 5px black;
     border-radius: 10px;
     color: white;
-    background-color: blue;
+    background-color: #26a7de;
 }
 .btn2:hover{
-    color: blue;
+    color: #26a7de;
     background-color: white;
     transition: .31s;
 }
@@ -184,12 +239,12 @@ button{
     display: grid;
     grid-template-rows: 1fr 2fr;
     border-radius: 10px;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px white;
 }
 .contact-fonts{
     height: 70px;
     width: 70px;
-    background-color: blue;
+    background-color: #26a7de;
     color: white;
     text-align: center;
     line-height: 70px;
@@ -200,11 +255,11 @@ button{
 }
 .contact-fonts a{
     color: white;
-    background-color: blue;
+    background-color: #26a7de;
 }
 .contact-fonts:hover{
     background-color: white;
-    color: blue;
+    color: #26a7de;
     transition: .31s;
 }
 .contact-via{
@@ -218,24 +273,42 @@ button{
     font-weight: bold;
     font-size: 35px;
 }
+.fa-linkedin,.fa-instagram,.fa-github{
+    padding: 20px;
+}
 /* contact me end */
 /* content end */
 
 /* footer start */
-.footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+
 .big{
     font-size: 35px;
     font-weight: bold;
 }
-.links ul li{
-    list-style-type: none;
-    padding: 10px;
-    font-size: 25px;
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.links ul li a:hover{
-    color: black;
+.socialmedia{
+    border-right: 1px solid white;
+}
+.fa-github:hover{
+    background-color: white;
+    border-radius: 25%;
+    transition: .31s;
+}
+.fa-linkedin:hover{
+    background-color: white;
+    border-radius: 25%;
+    transition: .31s;
+}
+.fa-instagram:hover{
+    background-color: white;
+    border-radius: 25%;
+    transition: .31s;
+}
+.thank{
+    text-align: center;
+    margin: auto;
 }
 /* footer end */
