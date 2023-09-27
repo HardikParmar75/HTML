@@ -178,7 +178,7 @@
             justify-content: center;
             height: 500px;
             flex-direction: column;
-            background: url(bot_2.jpg);
+            background: url(images/bot_2.jpg);
             background-size: cover;
             font-size: 55px;
             letter-spacing: 10px;
@@ -211,7 +211,7 @@
         }
         .a1
         {
-            background: url(bottom1.jpg);
+            background: url(images/bottom1.jpg);
             background-size: cover;
             letter-spacing: 5px;
             color: white;
@@ -253,7 +253,7 @@
         }
         .a2
         {
-            background: url(bottom2.jpg);
+            background: url(images/bottom2.jpg);
             background-size: cover;
             color: white;
             font-size: 30px;
@@ -315,7 +315,7 @@
         }
         .lm1
         {
-            background: url(mid.jpg);
+            background: url(images/mid.jpg);
             background-size: 100% 100%;
         }
         .lm2
@@ -377,7 +377,7 @@
         }
         .i1
         {
-            background: url(bb1.jpg);
+            background: url(images/bb1.jpg);
             background-size: cover;
             font-size: 45px;
             padding: 70px 0 0 400px;
@@ -429,7 +429,7 @@
         }
         .i3
         {
-            background: url(bottom3.jpg);
+            background: url(images/bottom3.jpg);
             background-size: cover;
             padding: 50px 0 0 500px;
             background-position: -50px 0px;
@@ -468,7 +468,7 @@
         }
         .i5
         {
-            background: url(bottom4.jpg);
+            background: url(images/bottom4.jpg);
             background-size: cover;
             padding: 50px 0 0 500px;
             background-position: -50px 0px;
@@ -769,7 +769,7 @@
         .discountmain
         {
             height: 500px;
-            background: url(bot_2.jpg);
+            background: url(images/bot_2.jpg);
             background-size: cover;
             background-attachment: fixed;
             display: flex;
@@ -914,107 +914,3 @@
             padding: 30px;
         }
         /* footer end */
-        @media(max-width:500px)
-        {
-            .header li{
-                display: block;
-            }
-            .navbar ul{
-                display: inline;
-                text-align: center;
-            }
-            .navbar li{
-                padding: 10px;
-            }
-            .subheader ul{
-                display: grid;
-                grid-template-columns: 2fr 2fr 2fr;
-            }
-            .content
-            {
-                font-size: auto;
-                word-spacing: 0;
-            }
-            .new-Arrivals{
-                display: inline;
-            }
-            .a1,.a2
-            {
-                height: 300px;
-                width: 100%;
-            }
-            .saveupto
-            {
-                display: inline;
-            }
-            .lm1,.lm2
-            {
-                height: 500px;
-                width: 100%;
-            }
-            .sale
-            {
-                display: inline;
-                width: 100%;
-            }
-            .i1{
-                height: 550px;
-                width: 100%;
-                font-size: auto;
-            }
-            .i3,.i5
-            {
-                height: 200px;
-                width: 100%;
-            }
-            .offer{
-                display: inline;
-            }
-            .o1,.o2{
-                width: 100%;
-            }
-            .mens,.womens,.bags,.footwear
-            {
-                display: grid;
-                grid-template-columns: 2fr 2fr;
-                margin: 0;
-                padding: 0;
-            }
-            .shippingmain{
-                display: inline;
-                justify-content: center;
-                align-items: center;
-            }
-            .support,.shipping,.garuntee,.coupons{
-                display: inline;
-            }
-            .footerpart1
-            {
-                display: inline-block;
-                width: 100%;
-            }
-            .f1,.f2,.f3,.f4
-            {
-                display: inline;
-                width: 100%;
-                text-align: center;
-            }
-            .footerpart2
-            {
-                display: inline-block;
-                padding: 0;
-                width: 100%;
-            }
-            .footerpart3
-            {
-                display: inline-block;
-                padding: 10px;
-                width: 100%;
-            }
-            .sp3{
-                color: white;
-            }
-            .i3,.i5{
-                padding: 50px 0 0 400px;
-            }
-        }
