@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xyz{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h">hello</h1>
+    <button id="b1" onclick="addcss()">add css</button>
+    <button id="b2" onclick="removecss()">remove css</button>
+    <button id="b3" onclick="addremovecss()" onmouseover="show()">add css</button>
+    <script>
+        var h1_tag=document.getElementById('h');
+        var b1_tag=document.getElementById('b1');
+        function addcss(){
+            h1_tag.style.color="red";
+            b1_tag.innerHTML="show";
+        }
+        function removecss(){
+            h1_tag.style.color=""
+        }
+        function addremovecss(){
+            if( h1_tag.style.color==""){
+                h1_tag.style.color="blue";
+            }
+            else{
+                h1_tag.style.color="";
+            }
+        }
+    </script>
+</body>
+</html>
