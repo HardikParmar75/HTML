@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xyz{
+            background: url(bb1.jpg);
+        }
+    </style>
+</head>
+<body>
+    <button id="button1" onclick="add()">add image</button>
+    <button id="button2" onclick="change()">change image</button>
+    <button id="button3" onclick="swap()">change from 2 to 3 and 3 to 2</button>
+    <div id="img1"></div>
+    <div id="img2">without change</div>
+    <div id="img3"></div>
+    <script>
+        function add(){
+            add_tag = document.getElementById('img1')
+            add_tag.innerHTML="hardik"
+                       
+        }
+        function change(){
+            change_tag = document.getElementById('img2')
+            change_tag.innerHTML="changed"
+        }
+        function swap(){
+            if(img3=="")
+            {
+                swap_tag = document.getElementById('img3')
+            swap_tag.innerHTML="hardik"
+            }
+            else{
+                swap_tag = document.getElementById('img3')
+            swap_tag.innerHTML="rhea"
+            }
+        }
+    </script>
+</body>
+</html>
