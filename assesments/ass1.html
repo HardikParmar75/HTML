@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ass1.css">
+</head>
+<body>
+    <div class="divmain">
+        <h1>Student Registration Form</h1>
+        <div class="twopart">
+            <div class="part1">
+                <p>First Name:</p>
+                <p>Last name:</p>
+                <p>Email:</p>
+                <p>Mobile:</p>
+                <p>Gender:</p>
+                <p>Date of birth:</p>
+                <p class="h">Address:</p>
+                <p>City:</p> 
+                <p>Areapin:</p>
+                <p>State:</p>
+                <p>Qualification:</p>
+                <p class="a">Specialization:</p>
+                <p>Password:</p>
+                <p><input type="button" value="Registered" class="btn"></p>
+            </div>
+            <div class="part2">
+                <p><input type="text" placeholder="enter your first name" class="b" required pattern="[a-zA-Z]{3,6}"></p>
+                <p><input type="text" placeholder="enter your last name" class="b" required pattern="[a-zA-Z]{3,6}"></p>
+                <p><input type="email" placeholder="it should contain @..." class="b"></p>
+                <p><input type="text" placeholder="only 10 digits are allowed" class="b" required pattern="[0-9]{10}"></p>
+                <p><input type="radio">Male <input type="radio">Female</p>
+                <p><input type="date" class="b"></p>
+                <p class="h"><textarea cols="70" rows="5"></textarea></p>
+                <p><input type="text" class="b"></p>
+                <p><input type="text" class="b"></p>
+                <p><input type="text" class="b"></p>
+                <p><select>
+                    <option>select qualification</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select></p>
+                <p class="a"><input type="checkbox">computer science<br>
+                    <input type="checkbox">information technology<br>
+                    <input type="checkbox">computer archietecture<br>
+                    <input type="checkbox">tele communication<br></p>
+                <p><input type="password" class="b"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

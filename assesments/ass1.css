@@ -1,0 +1,25 @@
+.twopart{
+    display: flex;
+}
+.part1{
+    width: 10%;
+}
+.part1 p{
+    line-height: 32px;
+}
+.part2{
+    width: 90%;
+}
+.h,.a{
+    height: 70px;
+}
+.b{
+    height: 30px;
+    width: 40%;
+}
+.btn{
+    height: 30px;
+    color: white;
+    background-color: green;
+    border: none;
+}
