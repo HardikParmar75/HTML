@@ -1,91 +1,106 @@
-@media (max-width:1400px){
-    .navbar ul li{
-        margin-left: 70px;
-    }
-}
-@media (max-width:1200px){
+@media(max-width:1024px){
     .navbar ul li{
         margin-left: 50px;
     }
-}
-@media (max-width:1024px){
-    .navbar ul li{
-        margin-left: 30px;
-    }
     .aboutme{
         width: 100%;
     }
-    .scroll{
-        padding-top: 45%;
+    .mydetail{
+        padding: 10px;
+    }
+    .mydetail p{
+        padding: 0px;
+    }
+    .projects{
+        width: 90%;
+    }
+    .contact-fonts{
+        margin-left: 35%;
     }
 }
-@media (max-width:916px){
-    .navbar ul li{
-        margin-left: 20px;
-    }
-    .contact{
-        width: 100%;
-    }
-}
-@media (max-width:850px){
-    .navbar ul li{
-        margin-left: 10px;
-    }
-    .contact{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media (max-width:800px)
-{
-    .fa-bars{
-        display: block;
-        text-align: right;
-    }
+@media(max-width:768px){
     .navbar ul li{
         display: none;
     }
-    .aboutme{
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
+    .fa-bars{
+        display: block;
     }
-}
-@media (max-width:600px){
-    .mydetail{
-        padding: 0;
+    .aboutme{
+        grid-template-columns: 1fr;
+        width: 80%;
     }
     .mydetail p{
-        padding: 10px;
+        padding: 20px;
     }
-    .aboutdetail{
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        font-size: 18px;
+    .projects{
+        grid-template-columns: 1fr;
+        width: 70%;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+        width: 70%;
+    }
+    .contact-fonts{
+        margin-left: 42%;
+    }
+}
+@media(max-width:425px){
+    .fullname{
+        clip-path: polygon(0% 0%,100% 0%,100% 90%,50% 100%,0% 90%,0% 0%)
     }
     .btn{
         font-size: 15px;
     }
     .bigtext{
-        font-size: 40px;
-    }
-    .projects{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .scroll{
-        padding-top: 45%;
-    }
-    .freelancing p{
-        font-size: 40px;
-    }
-    .contact{
-        display: grid;
-        grid-template-columns: 1fr;
+        font-size: 45px;
+        padding: 10px;
         width: 100%;
     }
+    .skilldetail{
+        font-size: 25px;
+    }
+    .scroll{
+        font-size: 25px;
+        padding-top: 40%;
+    }
+    .freelancing{
+        padding: 10px;
+    }
+    .freelancing p{
+        font-size: 50px;
+    }
+    .contact-fonts{
+        margin-left: 35%;
+    }
+    .big{
+        font-size: 30px;
+    }
     .footer{
-        display: grid;
         grid-template-columns: 1fr;
+    }
+}
+@media(max-width:375px){
+    .about{
+        font-size: 25px;
+    }
+    .aboutdetail{
+        font-size: 20px;
+    }
+    .btn{
+        height: 50px;
+        width: 40%;
+    }
+    .bigtext{
+        padding: 0;
+    }
+    .contact{
+        width: 50%;
+        margin-left: 7%;
+    }
+    .contact-fonts{
+        margin-left: 37%;
+    }
+    .big{
+        font-size: 20px;
     }
 }

@@ -1,16 +1,19 @@
+*{
+    scroll-behavior: smooth;
+}
 body *{
     box-sizing: border-box;
+    border: 1px solid;
     font-family: 'Poppins';
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: black;
-    color: white;
+    color: black;
 }
 a{
     text-decoration: none;
-    color: gray;
+    color: rgba(128, 128, 128, 0.687);
     background: none;
 }
 button{
@@ -38,14 +41,14 @@ button{
     position: relative;
 }
 .navbar ul li a:hover{
-    color: white;
+    color: black;
     transition: .31s;
 }
 .navbar ul li::after{
     content: "";
-    height: 5px;
+    height: 2px;
     width: 100%;
-    background-color: #26a7de;
+    background-color: black;
     position: absolute;
     top: 100%;
     right: 0;
@@ -64,7 +67,7 @@ button{
     text-align: center;
 }
 .bar{
-    margin: auto;
+    text-align: right;
 }
 .fa-bars{
     display: none;
@@ -82,6 +85,7 @@ button{
 .fullname{
     background: url(images/vintage_pens_writing_paper_74945_1920x1080.jpg);
     background-size: 100% 100%;
+    clip-path: polygon(0% 0%,100% 0%,100% 80%,50% 100%,0% 80%,0% 0%);
     background-attachment: fixed;
     text-align: center;
     margin: auto;
@@ -91,6 +95,9 @@ button{
 }
 .fullname p{
     padding: 30px;
+}
+.white{
+    color: white;
 }
 /* scroll end */
 
@@ -103,9 +110,14 @@ button{
     margin: auto;
     margin-top: 5%;
 }
+.myimg{
+    height: 100%;
+
+}
 .myimg img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 .mydetail{
     padding: 20px;
@@ -117,15 +129,14 @@ button{
     font-size: 30px;
 }
 .aboutdetail{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
     font-size: 25px;
+    justify-content: space-evenly;
 }
 .gray-part p{
     color: gray;
 }
 .gray-part p:hover{
-    color: white;
+    color: black;
 }
 .btn{
     height: 60px;
@@ -150,15 +161,33 @@ button{
     color: #26a7de;
 }
 /* aboutme end */
+/* skill start */
+.skilldetail{
+    text-align: center;
+    font-size: 35px;
+    justify-content: space-evenly;
+}
+.skilldetail p{
+    padding: 15px;
+}
+.skilldetail a{
+    color: #26a7de;
+    border: 3px solid black;
+    padding: 20px;
+}
+/* skill end  */
 
 /* our projects start */
 .bigtext{
-    font-size: 60px;
+    font-size: 70px;
     width: 50%;
     margin: auto;
     text-align: center;
     font-weight: bold;
     margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 20px;
+    border-bottom: 3px solid;
 }
 .projects{
     display: grid;
@@ -185,10 +214,11 @@ button{
 }
 .scroll p{
     padding: 20px;
+    color: white;
 }
 .project1:hover .scroll{
     padding-top: 20%;
-    background-color: rgba(0, 0, 0, 0.482);
+    background-color: rgba(0, 0, 0, 0.445);
 }
 .scroll a{
     color: white;
@@ -203,11 +233,11 @@ button{
     text-align: center;
     background-color: #26a7de;
     color: white;
-    padding: 100px;
+    padding: 150px;
     margin-top: 5%;
 }
 .freelancing p{
-    font-size: 50px;
+    font-size: 70px;
     padding: 10px;
     font-weight: bold;
 }
@@ -239,8 +269,15 @@ button{
     display: grid;
     grid-template-rows: 1fr 2fr;
     border-radius: 10px;
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px black;
 }
+.freelancing a{
+    color: white;
+}
+.freelancing a:hover{
+    color: #26a7de;
+}
+
 .contact-fonts{
     height: 70px;
     width: 70px;
@@ -259,6 +296,7 @@ button{
 }
 .contact-fonts:hover{
     background-color: white;
+    box-shadow: 0 0 5px black;
     color: #26a7de;
     transition: .31s;
 }
@@ -290,20 +328,20 @@ button{
     grid-template-columns: 1fr 1fr;
 }
 .socialmedia{
-    border-right: 1px solid white;
+    border-right: 1px solid black;
 }
 .fa-github:hover{
-    background-color: white;
+    background-color: black;
     border-radius: 25%;
     transition: .31s;
 }
 .fa-linkedin:hover{
-    background-color: white;
+    background-color:black;
     border-radius: 25%;
     transition: .31s;
 }
 .fa-instagram:hover{
-    background-color: white;
+    background-color: black;
     border-radius: 25%;
     transition: .31s;
 }

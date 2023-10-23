@@ -1,178 +1,242 @@
-@media (max-width:1420px){
-   .blogdetail{
-      top: 60%;
-   }
-}
-@media (max-width:1050px){
-   .blogdetail{
-      top: 40%;
-   }
-}
-@media (max-width:1028px){
-   .hikedetail{
-      top: 10%;
-   }
-}
-@media (max-width:930px){
-   .blogdetail{
-      top: 30%;
-   }
-   .hikedetail{
-      top: 0;
-      font-size: 10px;
-   }
-}
-@media (max-width:750px){
-   .blogdetail{
-      top: 0%;
-   }
-   .hikedetail{
-      font-size: 7px;
-   }
-}
-@media(max-width:500px){
-   .header{
-      display: grid;
-      grid-template-rows: 1fr 1fr 1fr;  
-   }
-   .navbar{
-      margin: 0;
-      padding: 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      
-   }
-   .revive{
-    padding: 0;
-    font-size: 20px;
-    /* margin: 0; */
-    word-spacing: 0;
-   } 
-   .letsgo{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-   }
-   .big{
-    font-size: 50px;
-   }
-   .letsgo{
-      display: grid;
-      grid-template-columns: 1fr;
-   }
-  .share{
-   display: grid;
-   grid-template-columns: 1fr;
-   padding: 0%;
-   width: 100%;
+@media(max-width:1440px) {
+ .blogdetail .orange{
+   font-size: 15px;
+ }  
+  .px{
+   font-size: 20px;
+  } 
+  .hikedetail p{
+   font-size: 11px;
   }
-  .raisemain{
-   padding: 0;
+}
+@media(max-width:1024px){
+  .big{
+    font-size: 30px;
   }
-  .twoparts{
-   display: grid;
-   grid-template-columns: 1fr;
+  .tribaltourmain{
+    margin:0px;
   }
-  .tourdetail{
-   display: grid;
-   grid-template-columns: 1fr;
+  .tourinfo{
+    font-size: 15px;
   }
   .offermain{
-   display: grid;
-   grid-template-rows: 1fr;
-   padding: 0;
-   background-size: cover;
+    font-size: 25 px;
   }
   .adventuredetail{
-   width: 90%;
-   display: grid;
-   grid-template-columns: 1fr;
-   margin: 0;
+    margin-left: 15px;
+  }
+  .tribal{
+    font-size: 23px;
+  }
+  .pro1{
+    margin: 10px;
+  }
+  .imgposition{
+    top: 20%;
+  }
+  .playstore{
+    padding: 20px;
+  }
+  .apple{
+    padding: 20px;
+  }
+  .date{
+    left: 50%;
+  }
+  .blogdetail{
+    font-size: 10px;
+    font-weight: normal;
+  }
+  svg{
+    height: 70px;
+  }
+  .hikedetail p{
+    font-size: 7px;
+  }
+  .gol{
+    height: 70px;
+    width: 70px;
+    left: 40%;
+  }
+  .endlogo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(max-width:768px){
+ .navbar{
+  grid-template-columns: 1fr 5fr 1fr;
+  padding: 0;
+  margin: 0;
+ }
+ .share{
+  width: 100%;
+  padding: 0;
+ }
+ .k img{
+  height: 40px;
+ }
+ .bars{
+  text-align: left;
+ } 
+ .revive{
+  margin: 0;
+ }
+ .tourdetail{
+  gap: 10px;
+ }
+ .raisemain{
+  padding: 0;
+ }
+ .offermain{
+  padding: 0;
+  font-size: 25px;
+ }
+ .adventuredetail{
+  width: 100%;
+  margin: 0;
+ }
+ .contactdetails{
+  margin: 0;
+ }
+ .createmain{
+  padding: 0;
+ }
+ .prorow1{
+  grid-template-columns: 1fr 1fr;
+ }
+ .px1{
+  font-size: 40px;
+ }
+ .playstore{
+  padding: 10px;
+ }
+ .apple{
+  padding: 1 0px;
+ }
+ .roundbig{
+  height: 40%;
+  width: 70%;
+ }
+ .imgposition{
+  top: 35%;
+ }
+ .blogs{
+  grid-template-columns: 1fr 1fr;
+ }
+ .besthikingmain{
+  grid-template-columns: 1fr;
+ }
+ svg{
+  height:100px
+ }
+ .hikedetail p{
+  font-size: 20px;
+ }
+ .gol{
+  height: 100px;
+  width: 100px;
+  left: 45%;
+ }
+ .endlogo{
+  grid-template-columns: 1fr;
+ }
+}
+@media(max-width:425px){
+  .header{
+    grid-template-rows: 1fr;
+  }
+  .revive{
+    width: 100%;
+    padding: 0;
+    font-size: 30px;
+  }
+  .letsgo{
+    grid-template-columns: 1fr;
+  }
+  .share{
+    grid-template-columns: 1fr;
+  }
+  .twoparts{
+    grid-template-columns: 1fr;
+  }
+  .tourdetail{
+    grid-template-columns: 1fr;
+  }
+  .offermain{
+    grid-template-rows: 1fr;
+  }
+  .adventuredetail{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .detail1{
+    grid-template-columns: 1fr;
   }
   .contactdetails{
-   width: 60%;
-   margin: auto;
-   display: grid;
-   grid-template-columns: 1fr;
-  }
-  .dreammain{
-   padding: 0;
+    width: 100%;
+    grid-template-columns: 1fr;
   }
   .row1,.row2{
-   display: grid;
-   grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .createmain{
-   display: grid;
-   grid-template-columns: 1fr;
-   padding: 10px;
-   background-size: cover;
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 0;
+    font-size: 10px;
+  }
+  .createmain p{
+    padding: 0;
+  }
+  .createpart2{
+    grid-template-rows: 1fr;
+  }
+  .ctext{
+    font-size: 40px;
   }
   .cnumbers{
-   display: grid;
-   grid-template-columns: 1fr;
-}
-.createpart2{
-   display: grid;
-   grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-.productmain{
-   padding: 10px 0 10px 0;
-}
-.prorow1{
-   display: grid;
-   grid-template-columns: 1fr;
-}
-.cart{
-   left: 25%;
-}
-.digitalmain{
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 2fr 2fr;
-}
-.imgposition{
-   top: 10%;
-}
-.roundbig{
-   height: 70%;
-}
-.googleplay{
-   display: grid;
-   grid-template-columns: 1fr;
-}
-.playstore,.apple{
-   padding: 20px;
-}
-.blogmain{
-   padding: 10px 0 10px 0;
-}
-.blogs{
-   display: grid;
-   grid-template-columns: 1fr;
-}
-.blogdetail{
-   top: 70%;
-}
-.hikedetail{
-   top: 20%;
-   font-size: 22px;
-}
-.besthikingmain{
-   display: grid;
-   grid-template-columns: 1fr;
-   background-color: black;
-   padding: 10px 0 20px 0;
-}
-.hike1{
-   padding-top: 20px;
-}
-.footer{
-   background-size: cover;
-}
-.lastfooter{
-   display: grid;
-   grid-template-columns: 1fr;
-}
+    grid-template-columns: 1fr 1fr;
+  }
+  .clients{
+    font-size: 25px;
+  }
+  .productmain{
+    padding: 0;
+  }
+  .prorow1{
+    grid-template-columns: 1fr;
+  }
+  .digitalmain{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr;
+  }
+  .imgposition{
+    top: 10%;
+  }
+  .roundbig{
+    height: 70%;
+  }
+  .apple,.playstore{
+    padding: 10px;
+  }
+  .blogs{
+    grid-template-columns: 1fr;
+  }
+  .date{
+    left: 81%;
+  }
+  svg{
+    height: 50px;
+  }
+  .besthikingmain p{
+    font-size: 11px;
+  }
+  .gol{
+    height: 50px;
+    width: 50px;
+  }
+  .lastfooter{
+    grid-template-columns: 1fr;
+  }
 }

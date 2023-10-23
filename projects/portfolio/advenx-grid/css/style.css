@@ -4,7 +4,7 @@
 }
 body *{
     box-sizing: border-box;
-    /* border: 1px solid; */
+    border: 1px solid orange;
     margin: 0;
     padding: 0;
 }
@@ -177,7 +177,7 @@ button
 }
 .tribaltourmain{
     display: grid;
-    grid-template-rows: 6fr 1fr;
+    grid-template-rows: 2fr 1fr;
     margin: 20px;
 }
 .tribal{
@@ -259,7 +259,7 @@ button
     background-color: black;
     color: white;
     padding-top: 30px;
-    padding-bottom: 30px    ;
+    padding-bottom: 30px;
 }
 .place{
     text-align: center;
@@ -556,6 +556,10 @@ svg{
     background: url(images/footer2-bg.jpg);
     color: white;
     background-size: 100% 100%;
+}
+.endlogo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .lastfooter{
     display: grid;

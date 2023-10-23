@@ -5,6 +5,7 @@
 }
 body *{
     box-sizing: border-box;
+    border: 1px solid orange;
     margin: 0;
     padding: 0;
 }
@@ -169,6 +170,7 @@ button{
     background-color: orangered;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     width: 90%;
     margin: auto;
     padding: 30px;
@@ -216,6 +218,7 @@ button{
 .popularrow1
 {
     display: flex;
+    flex-wrap: wrap;
 }
 .popimg1 
 {
