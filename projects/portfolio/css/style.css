@@ -3,7 +3,7 @@
 }
 body *{
     box-sizing: border-box;
-    border: 1px solid;
+    /* border: 1px solid; */
     font-family: 'Poppins';
     margin: 0;
     padding: 0;
@@ -22,10 +22,20 @@ button{
 .green{
     color: rgb(61, 227, 61);
 }
+.b1{
+    color: black;
+}
 /* header start */
 .header{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+    background-color: white;
+    transition: .31s;
 }
 .navbar{
     text-align: center;
@@ -83,21 +93,35 @@ button{
 
 /* scroll start */
 .fullname{
-    background: url(images/vintage_pens_writing_paper_74945_1920x1080.jpg);
     background-size: 100% 100%;
-    clip-path: polygon(0% 0%,100% 0%,100% 80%,50% 100%,0% 80%,0% 0%);
     background-attachment: fixed;
     text-align: center;
     margin: auto;
     font-size: 55px;
     padding: 165px 0 165px 0;
     word-spacing: 10px;
+    color: #26a7de;
+    animation: slider 10s linear infinite;
 }
 .fullname p{
     padding: 30px;
 }
 .white{
     color: white;
+}
+@keyframes slider{
+    0%{
+        background: url(images/developer.jpg);
+        background-size: 100% 100%;
+    }
+    50%{
+        background: url(images/close-up-hand-writing-notebook-top-view_23-2148888824.jpg);
+        background-size: 100% 100%;
+    }
+    100%{
+        background: url(images/college-project-concept-illustration_114360-10211.jpg);
+        background-size: 100% 100%;
+    }
 }
 /* scroll end */
 
@@ -231,7 +255,9 @@ button{
 /* freelancing start */
 .freelancing{
     text-align: center;
-    background-color: #26a7de;
+    background:url(images/close-up-hand-taking-notes_23-2148888827.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
     color: white;
     padding: 150px;
     margin-top: 5%;

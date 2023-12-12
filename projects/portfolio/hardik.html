@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CABeeZee%3Aregular%2Citalic&amp;subset=devanagari%2Clatin%2Clatin-ext&amp;display=swap" media="all" onload="this.media='all'">
 </head> 
-<body>
+<body onscroll="scrolleff()">
     <!-- header start -->
-    <div class="header">
+    <div class="header" id="i1">
         <div class="logo">
             Hard<span class="blue">ik</span>
         </div>
@@ -33,9 +33,9 @@
     <!-- scroll start -->
     <div class="scrollmain">
         <div class="fullname">
-            <p>HEY! I AM</p>
-            <h2>Hardik Parmar</h2>
-            <P>I'm a web developer.</P>
+            <p class="b1">HEY! I AM</p>
+            <h2 class="blue">Hardik Parmar</h2>
+            <P class="b1">I'm a web developer.</P>
         </div>
     </div>
     <!-- scroll end -->
@@ -111,7 +111,7 @@
                 <div class="project1">
                     <img src="css/images/OIP (1).jpeg" alt="" height="100%" width="100%">
                     <div class="scroll">
-                        <p>Friendliefy</p>
+                        <p>Mobirise-bootstrap</p>
                         <p><a href="friendliefy/registration_page.html">Read More <i class="fa-solid fa-arrow-right"></i></a></p>
                     </div>
                 </div>
@@ -179,5 +179,19 @@
         </div>
     </div>
     <!-- footer end -->
+    <!-- script start -->
+    <script>
+        var a = document.getElementById('i1')
+        function scrolleff(){
+            if(document.documentElement.scrollTop > 100)
+            {
+                a.style.padding="0px";
+            }
+            else{
+                a.style.padding="10px";
+            }
+        }
+    </script>
+    <!-- script end -->
 </body>
 </html>
